@@ -1,9 +1,0 @@
-comando para criar base do arquivo react
-- rafce
-
-separar os componentes em pastas
-
-// Link: cria um link para a rota
-// Route: define o que irá aparecer na tela, caso o path seja ígual ao URL
-// Switch: garante que apenas um route seja ativado por vez
-// BrowserRouter: necessário para fazer o router funcionar (deve envolver links e routes)
