@@ -1,0 +1,17 @@
+.conteudo {
+  height: 100vh;
+  width: 100%;
+  background-color: #dadada;
+  color: #00000065;
+  font-size: 15px;
+  text-align: center;
+}
+
+.botaoTeste {
+  height: 40px;
+  width: 100px;
+}
+
+.teste {
+  background-color: rgb(2, 163, 2);
+}

@@ -1,0 +1,13 @@
+.userContainer {
+  display: flex;
+  align-items: center;
+}
+
+.userContainer:hover {
+  cursor: pointer;
+}
+
+.userName {
+  font-size: 0.9rem;
+  margin-left: 10px;
+}

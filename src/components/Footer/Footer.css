@@ -1,0 +1,117 @@
+footer {
+  font-family: "Roboto";
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #2D2D2D;
+  align-items: center;
+  justify-content: center;
+  color: #d1d1d1;
+  font-size: 1.3rem;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 34px;
+}
+
+.paymentMethodsFooter{
+  color: #FAB629;
+}
+
+.paymentMethodsFooter p{
+  color: #d1d1d1;
+  margin-top: 3px;
+}
+
+.paymentMethodsFooter span{
+  border: solid 1px #d1d1d1;
+  padding: 2px;
+  margin: 0px 2px;
+}
+
+.securityStickersFooter{
+  color: #FAB629;
+}
+
+.securityStickersFooter p{
+  color: #d1d1d1;
+  margin-top: 3px;
+}
+
+.securityStickersFooter span{
+  border: solid 1px #d1d1d1;
+  padding: 2px;
+  margin: 0px 2px;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding-top: 26px;
+}
+
+.footer2 ul{
+  display: block;
+  color: #FAB629;
+  text-align: left;
+  margin: 0px 10px;
+}
+
+.footer2 li{
+  font-size: 0.9rem;
+  color: #d1d1d1;
+  text-align: left;
+  transition: color .3s;
+}
+
+.footer2 li:hover{
+  cursor: pointer;
+  color: #FAB629;
+}
+
+.footer2 li:before {
+  content: "> ";
+}
+
+.footer2 ul li :hover{
+  background-color: #FAB629;
+  color: #FAB629;
+  cursor: pointer;
+}
+
+.footer3 {
+  display: block;
+  justify-content: center;
+  padding: 20px 0px 26px 0px;
+}
+
+.footer3 section {
+  color: #FAB629;
+  padding: 0px;
+}
+
+.footer3 div{
+  margin-top: 20px;
+}
+
+.footer3 i {
+  margin: 0 auto;
+  display: flex;
+  width: 180px;
+  border: solid 1px #d1d1d1;
+  transform: translateY(-10px);
+}
+
+.socialIconsFooter span{
+  margin: 0px 5px;
+  padding: 0px 10px;
+  font-size: 2.5rem;
+}
+
+.socialIconsFooter :hover{
+  cursor: pointer;
+}
