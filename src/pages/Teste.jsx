@@ -7,6 +7,7 @@ import Header from '../components/Header/Header.jsx';
 
 const Teste = () => {
 
+  // TODO - Remove this later
   // Hooks -> usado para realizar um evento e atualizar o componente na pagina logo em seguida
 
   // useEffect  -> executa um trecho de código toda vez que a depencia que é informada no array muda, caso nao ponha a dependenia ele ira atualizar toda vez que qualquer evento dentro do componente ocorrer
