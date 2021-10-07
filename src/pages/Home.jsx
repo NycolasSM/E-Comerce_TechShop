@@ -8,6 +8,7 @@ import CarouselAdvertising from '../components/Header/CarouselAdvertising/Carous
 import HomeCategoriesSession from '../components/Home/HomeCategoriesSession.jsx';
 import HomeCardsCategories from '../components/Home/HomeCardsCategories.jsx';
 import HomeCardsBrands from '../components/Home/HomeCardsBrands.jsx'
+import ProductCards from '../components/Cards/ProductCard.jsx'
 
 import EspacoBranco from '../components/Home/espacoBranco.jsx';
 
@@ -27,6 +28,7 @@ const home = () => {
       <br />
       <br />
       <HomeCategoriesSession title="Os Melhores Produtos Para Você" more="Conheça mais" />
+      <ProductCards />
       <EspacoBranco />
       <Footer />
     </div>

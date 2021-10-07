@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './SiginUpForm.css'
-import { cpfMask } from '../CpfMask'
+import { cpfMask } from './CpfMask'
 
 const SiginUpForm = () => {
 

@@ -1,0 +1,93 @@
+.card.Product {
+  display: flex;
+  width: 220px;
+  height: 344px;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #e7e7e7;
+  border-radius: 6px;
+  box-shadow: 4px 5px 15px 3px rgba(0, 0, 0, 0.267);
+  transition: background-color 0.3s;
+}
+
+.card.Product img {
+  height: 190px;
+  margin-bottom: 10px;
+}
+
+.card.Product:hover {
+  background-color: #eeeeee;
+  border-radius: 6px;
+  box-shadow: 6px 7px 15px 3px rgba(0, 0, 0, 0.267);
+}
+
+.ProductCardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.ProductCardLine{
+  margin-top: 0px;
+  width: 190px;
+  border: solid 1px rgb(177, 177, 177);
+}
+
+.ProductCardTitle {
+  font-size: 1.1rem;
+}
+
+.ProductCardTitle {
+  font-size: 1.1rem;
+}
+
+.ProductCardButtons {
+  margin-top: 1px;
+  display: flex;
+  gap: 2px;
+  justify-content: space-between;
+}
+
+.ProductCardValue {
+  font-size: 1.1rem;
+}
+
+.ProductCardValueInstallment {
+  font-size: 0.9rem;
+  color: #cf6f00;
+}
+
+.ProductCardBuyButton {
+  height: 39px;
+  width: 140px;
+  border: solid 2px #276100;
+  background-color: #28ac17;
+  font-size: 1.2rem;
+  color: #fafafa;
+  transition: background-color .2s;
+
+}
+
+.ProductCardBuyButton:hover {
+  background-color: #2ac516;
+  cursor: pointer;
+}
+
+.ProductCardCartButton {
+  height: 39px;
+  width: 50px;
+  border: solid 2px #276100;
+  background-color: #5fcc16;
+  font-size: 1.1rem;
+  color: #fafafa;
+  transition: background-color .2s;
+}
+
+.ProductCardCartButton:hover {
+  background-color: #6de71b;
+  cursor: pointer;
+}
+
+.ProductCardCartButton::after {
+  content: "+";
+}

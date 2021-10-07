@@ -1,5 +1,5 @@
 import React from 'react'
-import './HomeCardsCategories.css'
+
 import CardIconDefault from '../Cards/icons/CardIconDefault.png'
 import CardIconComputer from '../Cards/icons/CardIconComputer.png'
 import CardIconKeyboard from '../Cards/icons/CardIconKeyboard.png'
@@ -7,10 +7,11 @@ import CardIconMonitor from '../Cards/icons/CardIconMonitor.png'
 import CardIconMouse from '../Cards/icons/CardIconMouse.png'
 import CardIconMousePad from '../Cards/icons/CardIconMousePad.png'
 import CardIconHeadPhone from '../Cards/icons/CardIconHeadPhone.png'
-import CardCategory from '../Cards/CardCategory.jsx'
+
+import Card from '../Cards/Card.jsx'
 
 const icons = {
-  "default": CardIconDefault,
+  "": CardIconDefault,
   "Computer": CardIconComputer,
   "Keyboard": CardIconKeyboard,
   "Monitor": CardIconMonitor,
@@ -22,13 +23,13 @@ const icons = {
 const HomeCardsCategories = () => {
   return (
     <div className="limitPageWidth">
-      <section className="flexCardsCategories">        
-        <CardCategory title="Monitores" imageSrc={icons["Monitor"]} altText="CategoryIcon" />
-        <CardCategory title="Teclados" imageSrc={icons["Keyboard"]} altText="CategoryIcon" />
-        <CardCategory title="Mouses" imageSrc={icons["Mouse"]} altText="CategoryIcon" />
-        <CardCategory title="MousePads" imageSrc={icons["MousePad"]} altText="CategoryIcon" />
-        <CardCategory title="Fones de Ouvido" imageSrc={icons["HeadPhone"]} altText="CategoryIcon" />
-        <CardCategory title="Computadores" imageSrc={icons["Computer"]} altText="CategoryIcon" />
+      <section className="flexCards">        
+        <Card className="" title="Monitores" imageSrc={icons["Monitor"]} altText="CategoryIcon" />
+        <Card className="" title="Teclados" imageSrc={icons["Keyboard"]} altText="CategoryIcon" />
+        <Card className="" title="Mouses" imageSrc={icons["Mouse"]} altText="CategoryIcon" />
+        <Card className="" title="MousePads" imageSrc={icons["MousePad"]} altText="CategoryIcon" />
+        <Card className="" title="Fones de Ouvido" imageSrc={icons["HeadPhone"]} altText="CategoryIcon" />
+        <Card className="" title="Computadores" imageSrc={icons["Computer"]} altText="CategoryIcon" />
       </section>
     </div>
   )
