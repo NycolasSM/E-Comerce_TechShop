@@ -1,17 +1,23 @@
 .card.Product {
   display: flex;
-  width: 220px;
-  height: 344px;
-  flex-wrap: wrap;
+  width: 230px;
+  height: 368px;
   align-items: center;
   background-color: #e7e7e7;
   border-radius: 6px;
   box-shadow: 4px 5px 15px 3px rgba(0, 0, 0, 0.267);
   transition: background-color 0.3s;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  max-width:230px;
+  overflow: hidden;
 }
 
 .card.Product img {
-  height: 190px;
+  max-width:205px;
+  max-height:190px;
+  width: auto;
+  height: auto;
   margin-bottom: 10px;
 }
 
@@ -25,6 +31,8 @@
   display: flex;
   flex-direction: column;
   gap: 3px;
+  width: 200px;
+  max-width:200px;
 }
 
 .ProductCardLine{
@@ -34,11 +42,21 @@
 }
 
 .ProductCardTitle {
-  font-size: 1.1rem;
+  max-width:220px;
+  height: 20px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 
-.ProductCardTitle {
-  font-size: 1.1rem;
+.ProductCardSubTItle {
+  max-width:220px;
+  height: 20px;
+  overflow: hidden;
+  font-size: 0.95rem;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 
 .ProductCardButtons {
@@ -50,22 +68,23 @@
 
 .ProductCardValue {
   font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .ProductCardValueInstallment {
   font-size: 0.9rem;
+  font-weight: 600;
   color: #cf6f00;
 }
 
 .ProductCardBuyButton {
   height: 39px;
-  width: 140px;
+  width: 150px;
   border: solid 2px #276100;
   background-color: #28ac17;
   font-size: 1.2rem;
   color: #fafafa;
   transition: background-color .2s;
-
 }
 
 .ProductCardBuyButton:hover {
