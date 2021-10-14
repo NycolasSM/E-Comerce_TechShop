@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Home from './pages/Home.jsx';
-import Login from './pages/Login.jsx';
-import FormularioTeste from './pages/FormularioTeste.jsx';
-import Testes from './pages/Teste.jsx'
+import Home from './frontend/pages/Home.jsx';
+import Login from './frontend/pages/Login.jsx';
+import FormularioTeste from './frontend/pages/FormularioTeste.jsx';
+import Testes from './frontend/pages/Teste.jsx'
 
 const App = () => {
   return (

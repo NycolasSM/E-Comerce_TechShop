@@ -1,0 +1,13 @@
+.cartContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px
+}
+
+.cartContainer:hover {
+  cursor: pointer;
+}
+
+.cartInfo {
+  font-size: 0.9rem;
+}

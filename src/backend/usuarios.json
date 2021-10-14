@@ -1,0 +1,376 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "RedDragon Cobra",
+      "description": "Mouse Gamer Cobra M711",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/MouseGamerCobra.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/MouseGamerCobra2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/MouseGamerCobra3.png"
+        },
+        {
+          "id": 4,
+          "src": "./ProductsImgs/MouseGamerCobr4.png"
+        }
+      ],
+      "preco": 135,
+      "category": "Mouse",
+      "brand": "RedDragon"
+    },
+    {
+      "id": 2,
+      "name": "RedDragon Griffin",
+      "description": "Mouse Gamer Griffin",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/MouseGamerRedDragonGriffin.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/MouseGamerRedDragonGriffin2.png"
+        },
+        {
+          "id": 3,
+          "src": "../ProductsImgs/MouseGamerRedDragonGriffin3.png"
+        }
+      ],
+      "preco": 110,
+      "category": "Mouse",
+      "brand": "RedDragon"
+    },
+    {
+      "id": 3,
+      "name": "Kumara K552",
+      "description": "Teclado Kumara K552",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/TecladoGamerMecanicoKumaraK552.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/TecladoGamerMecanicoKumaraK5522.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/TecladoGamerMecanicoKumaraK5523.png"
+        }
+      ],
+      "preco": 230,
+      "category": "Keyboard",
+      "brand": "RedDragon"
+    },
+    {
+      "id": 4,
+      "name": "RedDragon Karura",
+      "description": "Teclado RedDragon Karura",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/TecladoGamerRedDragonKarura.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/TecladoGamerRedDragonKarura2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/TecladoGamerRedDragonKarura3.png"
+        }
+      ],
+      "preco": 150,
+      "category": "Keyboard",
+      "brand": "RedDragon"
+    },
+    {
+      "id": 5,
+      "name": "MousePad Infernal Dragon",
+      "description": "MousePad Infernal Dragon",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/MousePadGamerInfernalDragon.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/MousePadGamerInfernalDragon2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/MousePadGamerInfernalDragon3.png"
+        }
+      ],
+      "preco": 149.9,
+      "category": "Mousepad",
+      "brand": "RedDragon"
+    },
+    {
+      "id": 6,
+      "name": "RedDraon ZeusX",
+      "description": "HeadSet RedDraon ZeusX",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/HeadSetGamerRedDraonZeusX.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/HeadSetGamerRedDraonZeusX2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/HeadSetGamerRedDraonZeusX3.png"
+        }
+      ],
+      "preco": 369,
+      "category": "Headset",
+      "brand": "RedDragon"
+    },
+    {
+      "id": 7,
+      "name": "HeadSet Logitech G733",
+      "description": "HeadSet Gamer Sem Fio",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/HeadSetGamerSemFioLogitechG733.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/HeadSetGamerSemFioLogitechG7332.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/HeadSetGamerSemFioLogitechG7333.png"
+        }
+      ],
+      "preco": 359.9,
+      "category": "Headset",
+      "brand": "Logitech"
+    },
+    {
+      "id": 8,
+      "name": "MonitorGamerBlur",
+      "description": "MonitorGamerBlur",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/MonitorGamerBlueCase23.8FullHd165HzBM248GC.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/MonitorGamerBlueCase23.8FullHd165HzBM248GC2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/MonitorGamerBlueCase23.8FullHd165HzBM248GC3.png"
+        },
+        {
+          "id": 4,
+          "src": "./ProductsImgs/MonitorGamerBlueCase23.8FullHd165HzBM248GC4.png"
+        }
+      ],
+      "preco": 1899.9,
+      "category": "Monitor",
+      "brand": "Bluecase"
+    },
+    {
+      "id": 9,
+      "name": "LGLed 24MK430H",
+      "description": "Monitor LGLed FullHD",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/MonitorLGLed23.8WidescreenFullHD24mk430h.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/MonitorLGLed23.8WidescreenFullHD24mk430h2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/MonitorLGLed23.8WidescreenFullHD24mk430h3.png"
+        },
+        {
+          "id": 4,
+          "src": "./ProductsImgs/MonitorLGLed23.8WidescreenFullHD24mk430h4.png"
+        }
+      ],
+      "preco": 1100,
+      "category": "Monitor",
+      "brand": "LG"
+    },
+    {
+      "id": 10,
+      "name": "Logitech G305",
+      "description": "Mouse Gamer Logite LightSpeed",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/MouseGamerLogitechG305LightSpeed.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/MouseGamerLogitechG305LightSpeed2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/MouseGamerLogitechG305LightSpeed3.png"
+        }
+      ],
+      "preco": 350,
+      "category": "Mouse",
+      "brand": "Logitech"
+    },
+    {
+      "id": 11,
+      "name": "Logitech G403 Hero",
+      "description": "Mouse Gamer Logitech",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/MouseGamerLogitechG403Hero.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/MouseGamerLogitechG403Hero2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/MouseGamerLogitechG403Hero3.png"
+        }
+      ],
+      "preco": 378,
+      "category": "Mouse",
+      "brand": "Logitech"
+    },
+    {
+      "id": 12,
+      "name": "MousePad Logitech G840",
+      "description": "Extra Grande",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/MousePadGamerExtraGrandeLogitechG840.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/MousePadGamerExtraGrandeLogitechG8402.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/MousePadGamerExtraGrandeLogitechG8403.png"
+        }
+      ],
+      "preco": 138,
+      "category": "Mousepad",
+      "brand": "Logitech"
+    },
+    {
+      "id": 13,
+      "name": "MousePad RedDragon",
+      "description": "Archelon P002",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/MousePadGamerRedDragonArchelonP002.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/MousePadGamerRedDragonArchelonP0022.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/MousePadGamerRedDragonArchelonP0023.png"
+        }
+      ],
+      "preco": 129,
+      "category": "Mousepad",
+      "brand": "RedDragon"
+    },
+    {
+      "id": 14,
+      "name": "Logitech PowerPlay G943",
+      "description": "Mouse Pad Logitech",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/MousePadLogitechPowerPlayG943.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/MousePadLogitechPowerPlayG9432.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/MousePadLogitechPowerPlayG9433.png"
+        }
+      ],
+      "preco": 119,
+      "category": "Mousepad",
+      "brand": "Logitech"
+    },
+    {
+      "id": 15,
+      "name": "Kit PCGamer Geforce",
+      "description": "IntelCore i5 8Gb Hd500Gb",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/PCGamerIntelCore58GbHd500GbGeforceKit.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/PCGamerIntelCore58GbHd500GbGeforceKit2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/PCGamerIntelCore58GbHd500GbGeforceKit3.png"
+        },
+        {
+          "id": 4,
+          "src": "./ProductsImgs/PCGamerIntelCore58GbHd500GbGeforceKit4.png"
+        }
+      ],
+      "preco": 2239,
+      "category": "KitPc",
+      "brand": "Geforce"
+    },
+    {
+      "id": 16,
+      "name": "Logitech G213",
+      "description": "Logitech G213 Prodigy",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/TecladoGamerLogitechG213Prodigy.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/TecladoGamerLogitechG213Prodigy2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/TecladoGamerLogitechG213Prodigy3.png"
+        },
+        {
+          "id": 4,
+          "src": "./ProductsImgs/TecladoGamerLogitechG213Prodigy4.png"
+        }
+      ],
+      "preco": 219,
+      "category": "Keyboard",
+      "brand": "Logitech"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+.topBar {
+  display: flex;
+  justify-items: center;
+  background-color: black;
+}
+
+.topBar, ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.1rem;
+  color: #CACACA;
+}
+
+.socialIcons :hover {
+  cursor: pointer;
+}
+
+.socialIcons span{
+  font-size: 0.7rem;
+}
+
+.socialIcons {
+  margin-left: 30px;
+  font-size: 0.9rem;
+}

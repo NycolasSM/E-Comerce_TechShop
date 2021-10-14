@@ -1,0 +1,38 @@
+.HeaderUserInfo {
+  display: flex;
+  background-color: #2D2D2D;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0px 1.8rem;
+  color: white;
+  gap: 50px;
+}
+
+hr {
+  border-color: gray;
+  border-width: 2px;
+}
+
+.logoHome {
+  margin: 0;
+  padding: 0.2rem;
+  color: #b8b8b8;
+  font-size: 30px;
+  border: solid 2px gray
+}
+
+.logo {
+  height: 70px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.userInfos {
+  display: flex;
+  gap: 30px;
+  font-size: 25px;
+  color: #cacaca;
+  align-items: center;
+}
