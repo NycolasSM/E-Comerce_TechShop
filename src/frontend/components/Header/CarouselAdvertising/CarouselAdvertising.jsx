@@ -14,8 +14,8 @@ const Carousel = () => {
     dots: true,
     speed: 500,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 5000,
+    autoplay: true,
+    autoplaySpeed: 6000,
     swipe: false,
     pauseOnHover: false,
   }

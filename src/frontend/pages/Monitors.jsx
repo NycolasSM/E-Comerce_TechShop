@@ -6,34 +6,27 @@ import Header from '../components/Header/Header.jsx';
 import Footer from '../components/Footer/Footer.jsx';
 import Carousel from '../components/Header/CarouselAdvertising/CarouselAdvertising.jsx'
 import HomeCategoriesSession from '../components/Home/HomeCategoriesSession.jsx';
-import HomeCardsCategories from '../components/Home/HomeCardsCategories.jsx';
-import HomeCardsBrands from '../components/Home/HomeCardsBrands.jsx'
 import ProductCard from '../components/Cards/ProductCard.jsx'
+import ButtonBackToHome from '../components/Buttons/ButtonBackToHome.jsx';
 
 import EspacoBranco from '../components/Home/espacoBranco.jsx';
 
-const Home = () => {
+console.log(window.location.href)
 
+const Monitors = () => {
   return (
     <div>
       <TopBarInfo />
       <Header />
       <Nav />
       <Carousel />
-      <HomeCategoriesSession title="Procure pela Categoria" more="Todas as Categorias"/>
-      <HomeCardsCategories />
-      <br />
-      <br />
-      <HomeCategoriesSession title="Sua Marca Favorita" more="Todas as marcas"/>
-      <HomeCardsBrands />
-      <br />
-      <br />
-      <HomeCategoriesSession title="Os Melhores Produtos Para Você" more="Conheça mais" />
-      <ProductCard filter={""} brand={""} />
+      <ButtonBackToHome />
+      <HomeCategoriesSession title="Monitors" more="" />
+      <ProductCard category={"Monitor"} brand={""} />
       <EspacoBranco />
       <Footer />
     </div>
   )
 }
 
-export default Home
+export default Monitors

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { Link } from 'react-router-dom';
 
 import CardIconDefault from '../Cards/icons/CardIconDefault.png'
 import CardIconComputer from '../Cards/icons/CardIconComputer.png'
@@ -20,24 +21,32 @@ const icons = {
   "HeadPhone": CardIconHeadPhone,
 };
 
+
+
+
+
 const HomeCardsCategories = () => {
-
-  const [filter, setFilter] = useState()
-
-  // function handleCLick(event) {
-  //   // setFilter(text)
-  //   console.log(event.target)
-  // }
-
   return (
     <div className="limitPageWidth">
-      <section className="flexCards">        
-        <Card className="" category="Monitor" title="Monitores" imageSrc={icons["Monitor"]} altText="CategoryIcon"/>
-        <Card className="" category="Keyboard" title="Teclados" imageSrc={icons["Keyboard"]} altText="CategoryIcon" />
-        <Card className="" category="Mouse" title="Mouses" imageSrc={icons["Mouse"]} altText="CategoryIcon" />
-        <Card className="" category="Mousepads" title="MousePads" imageSrc={icons["MousePad"]} altText="CategoryIcon" />
-        <Card className="" category="Headset" title="Fones de Ouvido" imageSrc={icons["HeadPhone"]} altText="CategoryIcon" />
-        <Card className="" category="KitPC" title="Computadores" imageSrc={icons["Computer"]} altText="CategoryIcon" />
+      <section className="flexCards">
+        <Link className="link" to="/Monitors">
+          <Card className="" category="Monitor" title="Monitores" imageSrc={icons["Monitor"]} altText="CategoryIcon" />
+        </Link>
+        <Link className="link" to="/Keyboards">
+          <Card className="" category="Keyboard" title="Teclados" imageSrc={icons["Keyboard"]} altText="CategoryIcon" />
+        </Link>
+        <Link className="link" to="/Mouses">
+          <Card className="" category="Mouse" title="Mouses" imageSrc={icons["Mouse"]} altText="CategoryIcon" />
+        </Link>
+        <Link className="link" to="/Mousepads">
+          <Card className="" category="Mousepads" title="MousePads" imageSrc={icons["MousePad"]} altText="CategoryIcon" />
+        </Link>
+        <Link className="link" to="/Headsets">
+          <Card className="" category="Headset" title="Fones de Ouvido" imageSrc={icons["HeadPhone"]} altText="CategoryIcon" />
+        </Link>
+        <Link className="link" to="/Computers">
+          <Card className="" category="KitPC" title="Computadores" imageSrc={icons["Computer"]} altText="CategoryIcon" />
+        </Link>
       </section>
     </div>
   )

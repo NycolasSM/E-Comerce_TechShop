@@ -39,14 +39,14 @@ const CardCategory = ({
     </div>
   )
 
-  function handleCLick(event) {
-    // setFilter(text)
-    console.log(event.target)
-  }
+  // function pegarFiltro(event) {
+  //   console.log(event.target.attributes.category.value)
+  // }
+
 
   return (
-    <div onClick={handleCLick}>
-      <div className={`card ${className}`} >
+    <div>
+      <div category={category} className={`card ${className}`} >
         <img src={imageSrc} alt={altText} />
         <div className="cardTitle" >{className === "" ? title : className === "Brand" ? title : ""}</div>
         {className === "Product" ? isProduct : ""}

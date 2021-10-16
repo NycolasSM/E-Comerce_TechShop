@@ -42,7 +42,8 @@ import Card from './Card.jsx'
 // };
 
 const ProductCard = ({
-  filter = '',
+  category = '',
+  brand = '',
 }) => {
 
   const [products, setProduct] = useState([])
@@ -57,21 +58,29 @@ const ProductCard = ({
       })
   }, [])
 
-  // let filter = "Keyboard"
-
-  function aplicarFiltro(element) {
-    if(filter === "") {
+  function aplyFilterCategory(element) {
+    if(category === "") {
       return element
     } else {
-      return element.category === filter
+      return element.category === category
     }
   }
+
+  function aplyFilterBrands(element) {
+    if(brand === "") {
+      return element
+    } else {
+      return element.brand === brand
+    }
+  }
+
+  let productsFiltered = products.filter(aplyFilterCategory).filter(aplyFilterBrands)
 
   return (
     <div className="limitPageWidth">
       <section className="flexCardsProduct">
         {products.length > 0 ? ("") : ("Carregando ")}
-        {products.filter(aplicarFiltro).map(product => (
+        {productsFiltered.map(product => (
           <Card className="Product" key={product.id} title={product.name} subTitle={product.description} imageSrc={product.imgs[0].src} value={product.value} altText="ProductIcon" />
         ))}
 

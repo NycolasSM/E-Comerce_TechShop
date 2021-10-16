@@ -1,0 +1,17 @@
+.buttonBackToHome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 1.2rem;
+  padding: 2px 5px;
+  border:  solid 1px rgb(165, 165, 165);
+  border-radius: 5px;
+  background-color: rgb(199, 199, 199);
+  margin: 4px 2px;
+}
+
+.buttonBackToHome .userHeaderIcon{
+  margin-right: 5px;
+  font-size: 1.3rem;
+}
