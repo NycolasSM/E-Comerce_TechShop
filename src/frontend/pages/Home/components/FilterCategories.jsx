@@ -1,15 +1,15 @@
 import React from 'react'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
-import CardIconDefault from '../Cards/icons/CardIconDefault.png'
-import CardIconComputer from '../Cards/icons/CardIconComputer.png'
-import CardIconKeyboard from '../Cards/icons/CardIconKeyboard.png'
-import CardIconMonitor from '../Cards/icons/CardIconMonitor.png'
-import CardIconMouse from '../Cards/icons/CardIconMouse.png'
-import CardIconMousePad from '../Cards/icons/CardIconMousePad.png'
-import CardIconHeadPhone from '../Cards/icons/CardIconHeadPhone.png'
+import CardIconDefault from './icons/CardIconDefault.png'
+import CardIconComputer from './icons/CardIconComputer.png'
+import CardIconKeyboard from './icons/CardIconKeyboard.png'
+import CardIconMonitor from './icons/CardIconMonitor.png'
+import CardIconMouse from './icons/CardIconMouse.png'
+import CardIconMousePad from './icons/CardIconMousePad.png'
+import CardIconHeadPhone from './icons/CardIconHeadPhone.png'
 
-import Card from '../Cards/Card.jsx'
+import Card from '../../../components/Cards/Card.jsx'
 
 const icons = {
   "": CardIconDefault,
@@ -21,7 +21,7 @@ const icons = {
   "HeadPhone": CardIconHeadPhone,
 };
 
-const HomeCardsCategories = ({
+const FilterCategories = ({
   filterCategory,
 }) => {
 
@@ -57,4 +57,4 @@ const HomeCardsCategories = ({
   )
 }
 
-export default HomeCardsCategories
+export default FilterCategories

@@ -1,5 +1,5 @@
 import React from 'react'
-import './HomeCategoriesSession.css'
+import './SessionTitles.css'
 
 const HomeCategories = (props) => {
   return (

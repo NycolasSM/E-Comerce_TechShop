@@ -1,15 +1,15 @@
 import React from 'react'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
-import CardIconDefault from '../Cards/icons/CardIconDefault.png'
-import BrandIconRedDragon from '../Cards/icons/BrandIconRedDragon.png'
-import BrandIconHyperX from '../Cards/icons/BrandIconHyperX.png'
-import BrandIconCorsair from '../Cards/icons/BrandIconCorsair.png'
-import BrandIconLogitech from '../Cards/icons/BrandIconLogitech.png'
-import BrandIconRazer from '../Cards/icons/BrandIconRazer.png'
-import BrandIconPositivoGamer from '../Cards/icons/BrandIconPositivoGamer.png'
+import CardIconDefault from './icons/CardIconDefault.png'
+import BrandIconRedDragon from './icons/BrandIconRedDragon.png'
+import BrandIconHyperX from './icons/BrandIconHyperX.png'
+import BrandIconCorsair from './icons/BrandIconCorsair.png'
+import BrandIconLogitech from './icons/BrandIconLogitech.png'
+import BrandIconRazer from './icons/BrandIconRazer.png'
+import BrandIconPositivoGamer from './icons/BrandIconPositivoGamer.png'
 
-import Card from '../Cards/Card.jsx'
+import Card from '../../../components/Cards/Card.jsx'
 
 let icons = {
   "": CardIconDefault,
@@ -23,7 +23,7 @@ let icons = {
 
 
 
-const HomeCardsCategories = ({
+const FilterBrands = ({
   filterBrand,
 }) => {
   return (
@@ -59,4 +59,4 @@ const HomeCardsCategories = ({
   )
 }
 
-export default HomeCardsCategories
+export default FilterBrands

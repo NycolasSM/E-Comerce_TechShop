@@ -1,13 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Home from './frontend/pages/Home.jsx';
-import Login from './frontend/pages/Login.jsx';
+import Home from './frontend/pages/Home/Home.jsx';
+import Login from './frontend/pages/Login/Login.jsx';
 import FormularioTeste from './frontend/pages/FormularioTeste.jsx';
-import Testes from './frontend/pages/Teste.jsx'
-import PropagandaLogitech from './frontend/pages/PropagandaLogitech.jsx'
-import PropagandaRedDragon from './frontend/pages/PropagandaRedDragon.jsx';
-import ProductsFiltered from './frontend/pages/ProductsFiltered.jsx';
+import ProductsFiltered from './frontend/pages/Products/ProductsFiltered.jsx';
 
 const App = () => {
   return (
@@ -15,9 +12,6 @@ const App = () => {
       <Switch>   {/* o switch é usado para asegurar que apenas uma das paginas serao exibidas, pode ser substituido por exatic na frente do route porem umas das diferenças é que nesse contexto qualquer url que nao aprontar exatamente para um endereço ele ira para o home */}
         <Route path="/sigin" component={Login} />
         <Route path="/formtest" component={FormularioTeste} />
-        <Route path="/tests" component={Testes} />
-        <Route path="/propagandaLogitech" component={PropagandaLogitech} />
-        <Route path="/propagandaRedDragon" component={PropagandaRedDragon} />
         <Route path="/Products" component={ProductsFiltered} />
         <Route path="/" component={Home} />
       </Switch>
