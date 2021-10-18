@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import CardIconDefault from '../Cards/icons/CardIconDefault.png'
 import CardIconComputer from '../Cards/icons/CardIconComputer.png'
@@ -21,34 +21,39 @@ const icons = {
   "HeadPhone": CardIconHeadPhone,
 };
 
+const HomeCardsCategories = ({
+  filterCategory,
+}) => {
 
-
-
-
-const HomeCardsCategories = () => {
   return (
     <div className="limitPageWidth">
-      <section className="flexCards">
-        <Link className="link" to="/Monitors">
-          <Card className="" category="Monitor" title="Monitores" imageSrc={icons["Monitor"]} altText="CategoryIcon" />
-        </Link>
-        <Link className="link" to="/Keyboards">
-          <Card className="" category="Keyboard" title="Teclados" imageSrc={icons["Keyboard"]} altText="CategoryIcon" />
-        </Link>
-        <Link className="link" to="/Mouses">
-          <Card className="" category="Mouse" title="Mouses" imageSrc={icons["Mouse"]} altText="CategoryIcon" />
-        </Link>
-        <Link className="link" to="/Mousepads">
-          <Card className="" category="Mousepads" title="MousePads" imageSrc={icons["MousePad"]} altText="CategoryIcon" />
-        </Link>
-        <Link className="link" to="/Headsets">
-          <Card className="" category="Headset" title="Fones de Ouvido" imageSrc={icons["HeadPhone"]} altText="CategoryIcon" />
-        </Link>
-        <Link className="link" to="/Computers">
-          <Card className="" category="KitPC" title="Computadores" imageSrc={icons["Computer"]} altText="CategoryIcon" />
-        </Link>
-      </section>
-    </div>
+      <Link
+        to="scroll"
+        smooth={true}
+        duration={400}
+      >
+        <section className="flexCards">
+          <div onClick={() => filterCategory("Monitor")} >
+            <Card className="" category="Monitor" title="Monitores" imageSrc={icons["Monitor"]} altText="CategoryIcon" />
+          </div>
+          <div onClick={() => filterCategory("Keyboard")} >
+            <Card className="" category="Keyboard" title="Teclados" imageSrc={icons["Keyboard"]} altText="CategoryIcon" />
+          </div>
+          <div onClick={() => filterCategory("Mouse")} >
+            <Card className="" category="Mouse" title="Mouses" imageSrc={icons["Mouse"]} altText="CategoryIcon" />
+          </div>
+          <div onClick={() => filterCategory("Mousepad")} >
+            <Card className="" category="Mousepads" title="MousePads" imageSrc={icons["MousePad"]} altText="CategoryIcon" />
+          </div>
+          <div onClick={() => filterCategory("Headset")} >
+            <Card className="" category="Headset" title="Fones de Ouvido" imageSrc={icons["HeadPhone"]} altText="CategoryIcon" />
+          </div>
+          <div onClick={() => filterCategory("KitPc")} >
+            <Card className="" category="KitPC" title="Computadores" imageSrc={icons["Computer"]} altText="CategoryIcon" />
+          </div>
+        </section >
+      </Link>
+    </div >
   )
 }
 

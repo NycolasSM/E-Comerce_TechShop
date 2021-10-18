@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Nav from '../components/Header/Nav.jsx';
 import TopBarInfo from '../components/Header/TopBarInfo.jsx';
@@ -14,22 +14,35 @@ import EspacoBranco from '../components/Home/espacoBranco.jsx';
 
 const Home = () => {
 
+  const [category, setCategory] = useState("")
+  const [brand, setBrand] = useState("")
+
+  const filterCategory = (category) => {
+    setCategory(category)
+  }
+
+  const filterBrand = (brand) => {
+    setBrand(brand)
+  }
+
   return (
     <div>
       <TopBarInfo />
       <Header />
       <Nav />
       <Carousel />
-      <HomeCategoriesSession title="Procure pela Categoria" more="Todas as Categorias"/>
-      <HomeCardsCategories />
+      <HomeCategoriesSession title="Procure pela Categoria" more="Todas as Categorias" />
+      <HomeCardsCategories filterCategory={filterCategory} />
       <br />
       <br />
-      <HomeCategoriesSession title="Sua Marca Favorita" more="Todas as marcas"/>
-      <HomeCardsBrands />
+      <HomeCategoriesSession title="Sua Marca Favorita" more="Todas as marcas" />
+      <HomeCardsBrands filterBrand={filterBrand} />
       <br />
       <br />
-      <HomeCategoriesSession title="Os Melhores Produtos Para Você" more="Conheça mais" />
-      <ProductCard filter={""} brand={""} />
+      <div id="scroll"></div>
+      <HomeCategoriesSession title="Conheça os Produtos" more="Ver mais" />
+      {/* fazer um card para mostrar os filtros utilizados */}
+      <ProductCard category={category} brand={brand} />
       <EspacoBranco />
       <Footer />
     </div>

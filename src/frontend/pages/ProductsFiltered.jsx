@@ -13,7 +13,7 @@ import EspacoBranco from '../components/Home/espacoBranco.jsx';
 
 console.log(window.location.href)
 
-const Monitors = () => {
+const ProductsFiltered = () => {
   return (
     <div>
       <TopBarInfo />
@@ -29,4 +29,4 @@ const Monitors = () => {
   )
 }
 
-export default Monitors
+export default ProductsFiltered
