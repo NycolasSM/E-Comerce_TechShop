@@ -371,13 +371,378 @@
       "value": 219,
       "category": "Keyboard",
       "brand": "Logitech"
+    },
+    {
+      "id": 17,
+      "name": "Corsair HS35",
+      "description": "HeadSet HS35 Carbon",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/HeadSetGamerCorsairHS35Carbon.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/HeadSetGamerCorsairHS35Carbon2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/HeadSetGamerCorsairHS35Carbon3.png"
+        }
+      ],
+      "value": 211,
+      "category": "Headset",
+      "brand": "Corsair"
+    },
+    {
+      "id": 18,
+      "name": "VirtuosoRGB",
+      "description": "HeadSet Gamer Corsair",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/HeadSetGamerCorsairVirtuosoRgb.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/HeadSetGamerCorsairVirtuosoRgb2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/HeadSetGamerCorsairVirtuosoRgb3.png"
+        }
+      ],
+      "value": 245.90,
+      "category": "Headset",
+      "brand": "Corsair"
+    },
+    {
+      "id": 19,
+      "name": "Void Rgb Elite",
+      "description": "HeadSet Gamer Corsair",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/HeadSetGamerCorsairVoidRgbElite.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/HeadSetGamerCorsairVoidRgbElite2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/HeadSetGamerCorsairVoidRgbElite3.png"
+        }
+      ],
+      "value": 239.90,
+      "category": "Headset",
+      "brand": "Corsair"
+    },
+    {
+      "id": 20,
+      "name": "HyperX Cloud",
+      "description": "HeadSet Gamer HyberX",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/HeadSetGamerHyperxCloud.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/HeadSetGamerHyperxCloud2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/HeadSetGamerHyperxCloud3.png"
+        }
+      ],
+      "value": 278.50,
+      "category": "Headset",
+      "brand": "HyperX"
+    },
+    {
+      "id": 21,
+      "name": "HyperX Cloud Alpha",
+      "description": "HeadSet Gamer HyberX",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/HeadSetGamerHyperxCloudAlpha.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/HeadSetGamerHyperxCloudAlpha2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/HeadSetGamerHyperxCloudAlpha3.png"
+        }
+      ],
+      "value": 282.00,
+      "category": "Headset",
+      "brand": "HyperX"
+    },
+    {
+      "id": 22,
+      "name": "KrakenX2",
+      "description": "HeadSet Gamer Razer",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/HeadSetGamerRazerKrakenX.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/HeadSetGamerRazerKrakenX2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/HeadSetGamerRazerKrakenX3.png"
+        }
+      ],
+      "value": 212.00,
+      "category": "Headset",
+      "brand": "Razer"
+    },
+    {
+      "id": 23,
+      "name": "Kit Pc I7 10700k8",
+      "description": "I7 10700k8 8gb SSD 240Gb ",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/KItPcInteli710700K8GBDDR4SSd240gb.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/KItPcInteli710700K8GBDDR4SSd240gb2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/KItPcInteli710700K8GBDDR4SSd240gb3.png"
+        }
+      ],
+      "value": 3212.00,
+      "category": "KitPc",
+      "brand": "Intel"
+    },
+    {
+      "id": 24,
+      "name": "Corsair M55",
+      "description": "Mouse Gamer M55Rgb",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/MouseGamerCorsairM55Rgb.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/MouseGamerCorsairM55Rgb2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/MouseGamerCorsairM55Rgb3.png"
+        }
+      ],
+      "value": 211.00,
+      "category": "Mouse",
+      "brand": "Corsair"
+    },
+    {
+      "id": 25,
+      "name": "Corsair M65",
+      "description": "Mouse Gamer M65Rgb",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/MouseGamerCorsairM65Rgb.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/MouseGamerCorsairM65Rgb2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/MouseGamerCorsairM65Rgb3.png"
+        },
+        {
+          "id": 4,
+          "src": "./ProductsImgs/MouseGamerCorsairM65Rgb4.png"
+        }
+      ],
+      "value": 232.00,
+      "category": "Mouse",
+      "brand": "Corsair"
+    },
+    {
+      "id": 26,
+      "name": "HyperX Pulsefire",
+      "description": "Mouse Gamer HyperX",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/MouseGamerHyperxPulsefire.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/MouseGamerHyperxPulsefire2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/MouseGamerHyperxPulsefire3.png"
+        }
+      ],
+      "value": 204.90,
+      "category": "Mouse",
+      "brand": "HyperX"
+    },
+    {
+      "id": 27,
+      "name": "Razer NagaPro",
+      "description": "Mouse Gamer Razer",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/MouseGamerRazerNagaPro.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/MouseGamerRazerNagaPro2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/MouseGamerRazerNagaPro3.png"
+        }
+      ],
+      "value": 244.90,
+      "category": "Mouse",
+      "brand": "Razer"
+    },
+    {
+      "id": 28,
+      "name": "Corsair K68 Cherry",
+      "description": "Teclado Mecanico Gamer",
+      "imgs": [
+        {
+          "id": 1,
+          "src": "./ProductsImgs/TecladoMecanicoGamerCorsairK68Cherry.png"
+        },
+        {
+          "id": 2,
+          "src": "./ProductsImgs/TecladoMecanicoGamerCorsairK68Cherry2.png"
+        },
+        {
+          "id": 3,
+          "src": "./ProductsImgs/TecladoMecanicoGamerCorsairK68Cherry3.png"
+        }
+      ],
+      "value": 199.90,
+      "category": "Keyboard",
+      "brand": "Corsair"
     }
   ],
-  "posts": [
+  "users": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "email": "nycolas@test.com",
+      "password": "1234",
+      "name": "Nycolas",
+      "surname": "Santana",
+      "cpf": "123.456.789.00",
+      "cart": [
+        {
+          "product": "Mouse Red Dragon",
+          "value": 137.90
+        },
+        {
+          "product": "teste",
+          "value": 220.00
+        }
+      ],
+      "favoriteItens": [
+        {
+          "product": "Mouse Red Dragon"
+        },
+        {
+          "product": "Mouse Logitec"
+        },
+        {
+          "product": "Mouse"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "email": "test@test.com",
+      "password": "test",
+      "name": "test",
+      "surname": "Testando",
+      "cpf": "123.456.789.00",
+      "cart": [
+        {
+          "product": "Mouse Red Dragon",
+          "value": 137.90
+        },
+        {
+          "product": "teste",
+          "value": 220.00
+        },
+        {
+          "product": "teste",
+          "value": 1370.90
+        }
+      ],
+      "favoriteItens": [
+        {
+          "product": "Mouse Red Dragon"
+        },
+        {
+          "product": "Monitor"
+        },
+        {
+          "product": "HeatSet"
+        },
+        {
+          "product": "Mousepad"
+        }
+      ]
+    }
+  ],
+  "pageData": [
+    {
+      "email": "nycolas@test.com",
+      "password": "1234",
+      "name": "notLoggedIn",
+      "surname": "Santana",
+      "cpf": "123.456.789.00",
+      "cart": [
+        {
+          "product": "Mouse Red Dragon",
+          "value": 137.90
+        },
+        {
+          "product": "teste",
+          "value": 220.00
+        },
+        {
+          "product": "teste",
+          "value": 1000.00
+        }
+      ],
+      "favoriteItens": [
+        {
+          "product": "Mouse Red Dragon"
+        },
+        {
+          "product": "Mouse Red Dragon"
+        },
+        {
+          "product": "Mouse Red Dragon"
+        },
+        {
+          "product": "Mouse Red Dragon"
+        }
+      ]
     }
   ]
 }

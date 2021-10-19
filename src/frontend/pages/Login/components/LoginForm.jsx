@@ -44,7 +44,7 @@ const LoginForm = () => {
           <button>
             Login
           </button>
-          <span>Esqueceu minha senha</span>
+          <span>Esqueci minha senha</span>
         </div>
         <div className="loginWithSocialMedia">
           <h3>ACESSAR COM MINHAS REDES SOCIAIS</h3>

@@ -1,0 +1,138 @@
+.productInfoContainer {
+  margin: 30px 20px;
+  border: 2px solid red;
+}
+
+.productInfoTitle {
+  margin: 10px 40px;
+}
+
+.productInfoPreviewContainer {
+  display: grid;
+  grid-template-columns: 470px 90px;
+  grid-template-rows: repeat(5, 70px);
+  grid-template-areas: 
+    'imgPreview imgNav1'
+    'imgPreview imgNav2'
+    'imgPreview imgNav3'
+    'imgPreview imgNav4'
+    'imgPreview imgNav5'
+  ;
+
+  column-gap: 10px;
+  row-gap: 10px;
+
+
+  border: 2px solid tomato;
+
+  margin: 20px;
+}
+
+.productInfoPreviewImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid green;
+}
+
+#imgNav1 {
+  grid-area: imgNav1;
+  background-color: tomato;
+}
+
+#imgPreview {
+  grid-area: imgPreview;
+  background-color: rgba(49, 49, 240, 0.192);
+}
+
+#imgNav1:hover + #imgPreview {
+  background-color: rgba(255, 0, 0, 0.425);
+}
+
+#imgNav2 {
+  grid-area: imgNav2;
+}
+
+#imgNav2:hover + #imgPreview {
+  background-color: red;
+}
+
+#imgNav3 {
+  grid-area: imgNav3;
+}
+
+#imgNav3:hover + #imgPreview  {
+  background-color: saddlebrown;
+}
+
+#imgNav4 {
+  grid-area: imgNav4;
+}
+
+#imgNav5 {
+  grid-area: imgNav5;
+}
+
+
+.asd {
+  width: 50px;
+  height: 50px;
+  margin: 30px;
+}
+#elemento1 {
+  background-color: red;
+}
+#elemento2 {
+  background-color: blue;
+}
+#elemento1:hover + #elemento2 {
+  background-color: magenta;
+}
+
+
+
+
+/* .productInfoContainer .img3 {
+  grid-area: imgNav2;
+} */
+
+
+
+
+/* .productInfoPreviewContainer {
+  display: grid;
+  grid-template-columns: 470px 90px;
+  grid-template-rows: repeat(5, 70px);
+
+  column-gap: 10px;
+  row-gap: 10px;
+
+
+  border: 2px solid tomato;
+
+  margin: 20px;
+}
+
+.productInfoPreviewImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid green;
+}
+
+.productInfoContainer .img1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 6;
+
+
+}
+
+.productInfoContainer .img2, .img3, .img4, .img5, .img6, .img7 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row: initial / span 2;
+} */

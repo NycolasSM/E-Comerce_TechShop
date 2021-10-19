@@ -11,7 +11,7 @@ const Favorites = (props) => {
   return (
     <div className="favoriteContainer">
       <FontAwesomeIcon className="favoriteHeaderIcon" icon={faHeart} />
-      <span className={favoriteAmounts ? "favoriteAmouts" : " "}>{favoriteAmounts}</span>
+      <span className={favoriteAmounts ? "favoriteAmouts" : " "}>{favoriteAmounts ? favoriteAmounts : ""}</span>
     </div>
   )
 }

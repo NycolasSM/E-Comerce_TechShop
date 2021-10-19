@@ -7,7 +7,7 @@
   width: 86%;
   margin-top: 50px;
   margin-bottom: 140px;
-  background: radial-gradient(circle, rgba(208,208,208,1) 0%, rgba(218,218,218,1) 50%, rgba(208,208,208,1) 100%);
+  background: radial-gradient(circle, rgb(209, 209, 209) 0%, rgba(218,218,218,1) 50%, rgb(212, 212, 212) 100%);
 }
 
 .limitFormWidth {
@@ -18,7 +18,7 @@
 }
 
 .verticalLine {
-  border-left: 3px solid rgb(143, 143, 143);
+  border-left: 3px solid rgba(143, 143, 143, 0.781);
   border-radius: 10px;
   position: relative;
   top: 50px;

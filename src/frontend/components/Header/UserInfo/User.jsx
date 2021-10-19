@@ -11,7 +11,7 @@ const User = (props) => {
   return (
     <div className="userContainer">
       <FontAwesomeIcon className="userHeaderIcon" icon={faUser} />
-      <span className="userName">{userName ? userName : "Faça o Login"}</span>
+      <span className="userName">{userName === "notLoggedIn" ? "Faça o Login" : userName === "" ? "" : userName}</span>
     </div>
   )
 }
