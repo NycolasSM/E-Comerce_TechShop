@@ -8,7 +8,8 @@ import Carousel from '../../components/Header/CarouselAdvertising/CarouselAdvert
 import HomeCategoriesSession from './components/SessionTitles';
 import FilterCategories from './components/FilterCategories.jsx';
 import FilterBrands from './components/FilterBrands.jsx'
-import ProductCard from '../../components/Cards/ProductCard.jsx'
+import ProductCard from './components/ProductCard.jsx'
+import CardFiltersSelected from './components/CardFiltersSelected.jsx';
 
 const Home = () => {
 
@@ -21,6 +22,14 @@ const Home = () => {
 
   const filterBrand = (brand) => {
     setBrand(brand)
+  }
+
+  const removeCategoryFilter = () => {
+    setCategory("")
+  }
+
+  const removeBrandFilter = () => {
+    setBrand("")
   }
 
   return (
@@ -40,6 +49,7 @@ const Home = () => {
       <div id="scroll"></div>
       <HomeCategoriesSession title="Conheça os Produtos" more="" />
       {/* fazer um card para mostrar os filtros utilizados */}
+      <CardFiltersSelected category={category} brand={brand} removeCategoryFilter={removeCategoryFilter} removeBrandFilter={removeBrandFilter} />
       <ProductCard category={category} brand={brand} />
       <br />
       <br />

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './ProductCard.css'
 
-import Card from './Card.jsx'
+import Card from '../../../components/Cards/Card.jsx'
 
 const ProductCard = ({
   category = '',
@@ -21,18 +21,24 @@ const ProductCard = ({
     }, [])
 
     function aplyFilterCategory(element) {
+      let categoryFilter = category.toLowerCase().trim()
+      let elementCategory = element.category.toLowerCase().trim()
+
       if (category === "") {
         return element
       } else {
-        return element.category === category
+        return elementCategory === categoryFilter
       }
     }
 
     function aplyFilterBrands(element) {
+      let brandFilter = brand.toLowerCase().trim()
+      let elementBrand = element.brand.toLowerCase().trim()
+
       if (brand === "") {
         return element
       } else {
-        return element.brand === brand
+        return elementBrand === brandFilter
       }
     }
 

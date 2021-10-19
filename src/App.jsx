@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Home from './frontend/pages/Home/Home.jsx';
 import Login from './frontend/pages/Login/Login.jsx';
-import FormularioTeste from './frontend/pages/FormularioTeste.jsx';
+import FormularioTeste from './frontend/pages/FormTest/FormularioTeste.jsx';
 import ProductsFiltered from './frontend/pages/Products/ProductsFiltered.jsx';
 
 const App = () => {

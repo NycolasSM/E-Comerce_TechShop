@@ -6,7 +6,7 @@ import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import Carousel from '../../components/Header/CarouselAdvertising/CarouselAdvertising.jsx';
 import HomeCategoriesSession from '../Home/components/SessionTitles.jsx';
-import ProductCard from '../../components/Cards/ProductCard.jsx'
+import ProductCard from '../Home/components/ProductCard.jsx'
 
 import ButtonBackToHome from './Buttons/ButtonBackToHome.jsx';
 

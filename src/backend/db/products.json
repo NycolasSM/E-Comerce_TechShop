@@ -372,5 +372,12 @@
       "category": "Keyboard",
       "brand": "Logitech"
     }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
   ]
 }

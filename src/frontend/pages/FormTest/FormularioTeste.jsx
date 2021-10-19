@@ -1,7 +1,7 @@
 import React from 'react'
 
-import TopBarInfo from '../components/Header/TopBarInfo.jsx';
-import Header from '../components/Header/Header.jsx';
+import TopBarInfo from '../../components/Header/TopBarInfo.jsx';
+import Header from '../../components/Header/Header.jsx';
 
 const FormularioTeste = () => {
 

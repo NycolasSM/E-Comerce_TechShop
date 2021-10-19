@@ -1,0 +1,22 @@
+.cardFiltersSelected {
+  display: flex;
+  gap: 10px;
+  margin-left: 28px;
+  margin-top: 14px;
+}
+
+.filterSelected {
+  font-size: 0.9rem;
+  padding: 3px 3px 3px 5px;
+  background-color: rgb(206, 206, 206);
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.filterSelected:hover {
+  background-color: rgb(189, 189, 189);
+}
+
+.filterSelected::before {
+  content: "X ";
+}

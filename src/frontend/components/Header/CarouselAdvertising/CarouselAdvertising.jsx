@@ -38,8 +38,10 @@ const Carousel = () => {
               to="scroll"
               smooth={true}
               duration={500}
+              key={item.id}
             >
-              <div key={item.id}><img className="carrouselAdvertisingImg" alt={item.alt} src={item.img} /></div></Link>)}
+              <div key={item.id}><img className="carrouselAdvertisingImg" alt={item.alt} src={item.img} /></div>
+            </Link>)}
         </Slider>
       </div>
 
