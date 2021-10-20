@@ -1,138 +1,235 @@
 .productInfoContainer {
-  margin: 30px 20px;
-  border: 2px solid red;
+  margin: 40px 20px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 11px 2px rgba(0,0,0,0.52);
 }
 
-.productInfoTitle {
-  margin: 10px 40px;
+.productInfoPath {
+  padding: 30px 30px 0px 70px;
+  color: rgb(68, 68, 68);
 }
 
-.productInfoPreviewContainer {
+.productPath::after {
+  content: " > ";
+}
+
+.productPath:last-child::after {
+  content: "";
+}
+
+.productInfoSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productInfoPreviewSection {
   display: grid;
-  grid-template-columns: 470px 90px;
-  grid-template-rows: repeat(5, 70px);
+  grid-template-columns: 85px 85px 85px 85px 85px 85px;
+  grid-template-rows: repeat(5, 85px);
   grid-template-areas: 
-    'imgPreview imgNav1'
-    'imgPreview imgNav2'
-    'imgPreview imgNav3'
-    'imgPreview imgNav4'
-    'imgPreview imgNav5'
+    'imgPreview imgPreview imgPreview imgPreview imgPreview imgNav'
+    'imgPreview imgPreview imgPreview imgPreview imgPreview imgNav'
+    'imgPreview imgPreview imgPreview imgPreview imgPreview imgNav'
+    'imgPreview imgPreview imgPreview imgPreview imgPreview imgNav'
+    'imgPreview imgPreview imgPreview imgPreview imgPreview imgNav'
   ;
 
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 3px;
+  row-gap: 3px;
 
+  width: 45%;
+  height: 560px;
 
-  border: 2px solid tomato;
-
-  margin: 20px;
+  padding: 20px 30px;
+  margin: 0px 20px;
 }
 
 .productInfoPreviewImg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  max-height: 80px;
+  max-width: 80px;
+  object-fit: cover;
+  padding: 10px;
+  margin: 0;
   border: 2px solid green;
 }
 
-#imgNav1 {
-  grid-area: imgNav1;
-  background-color: tomato;
+.productInfoThumbnail{
+  max-height: 80px;
+  max-width: 80px;
+  object-fit: cover;
+  padding: 10px;
+  opacity: 0.6;
+  margin: 0;
+  border: 2px solid rgb(65, 65, 65);
+  border-radius: 6px;
+}
+
+.productInfoThumbnail.active{
+  opacity: 1;
+}
+
+.productInfoThumbnail:hover{
+  opacity: 1;
 }
 
 #imgPreview {
+  max-height: 430px;
+  max-width: 470px;
+  opacity: 1;
+  padding: 20px;
+  border: 3px solid rgba(34, 34, 34, 0.849);
   grid-area: imgPreview;
-  background-color: rgba(49, 49, 240, 0.192);
+  background-color: rgba(59, 59, 59, 0.034);
+  border-radius: 6px;
 }
 
-#imgNav1:hover + #imgPreview {
-  background-color: rgba(255, 0, 0, 0.425);
-}
-
-#imgNav2 {
-  grid-area: imgNav2;
-}
-
-#imgNav2:hover + #imgPreview {
-  background-color: red;
-}
-
-#imgNav3 {
-  grid-area: imgNav3;
-}
-
-#imgNav3:hover + #imgPreview  {
-  background-color: saddlebrown;
-}
-
-#imgNav4 {
-  grid-area: imgNav4;
-}
-
-#imgNav5 {
-  grid-area: imgNav5;
-}
-
-
-.asd {
-  width: 50px;
-  height: 50px;
-  margin: 30px;
-}
-#elemento1 {
-  background-color: red;
-}
-#elemento2 {
-  background-color: blue;
-}
-#elemento1:hover + #elemento2 {
-  background-color: magenta;
-}
-
-
-
-
-/* .productInfoContainer .img3 {
-  grid-area: imgNav2;
-} */
-
-
-
-
-/* .productInfoPreviewContainer {
-  display: grid;
-  grid-template-columns: 470px 90px;
-  grid-template-rows: repeat(5, 70px);
-
-  column-gap: 10px;
-  row-gap: 10px;
-
-
-  border: 2px solid tomato;
-
-  margin: 20px;
-}
-
-.productInfoPreviewImg {
+.productInfoBuySection{
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border: 1px solid rgb(85, 85, 85);
+  background-color: rgb(49, 49, 49);
+
+  border-radius: 8px;
+
+  color: rgb(216, 216, 216);
+
+  font-size: 2rem;
+
+  width: 47%;
+  height: 500px;
+
+  padding: 10px 24px;
+  margin: 0px 40px 0px 0px;
+  box-shadow: 2px 2px 11px 2px rgba(0,0,0,0.52);
+}
+
+.productInfoBuySectionTitle {
+  padding: 10px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.productInfoBuySectionValue {
+  margin-top: 10px;
+  font-size: 45px;
+  color: #fab629;
+}
+
+.productInfoBuySectionValueWithDiscount {
+  color: #38c03f;
+}
+
+.productInfoBuySectionValueWithDiscount span {
+  font-size: 24px;
+  color: #d3d3d3;
+}
+
+.productInfoBuySectionFreightCalculation {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  border: 2px solid gray;
+  border-radius: 2px;
+  height: 80px;
+  width: 460px;
+  justify-self: center;
+  margin-top: 32px;
+  font-size: 22px;
+  padding: 0px 10px;
+}
+
+.productInfoBuySectionFreightCalculation span {
+  font-size: 22px;
+  margin-left: 10px ;
+}
+
+.productInfoBuySectionFreightCalculation input {
+  font-size: 18px;
+  margin: 0px 12px;
+}
+
+.productInfoBuySectionFreightCalculationValue {
+  font-size: 16px;
+}
+
+.productInfoBuySectionInventory {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.productInfoBuySectionAmount {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.productInfoBuySectionAmount select {
+  background-color: rgb(224, 224, 224);
+  margin-left: 10px;
+  font-size: 20px;
+  border: none;
+  padding-left: 4px;
+}
+
+.productInfoBuySectionAmountOption {
+  font-size: 18px;
+}
+
+.productInfoBuySectionButtons {
+  display: flex;
   justify-content: center;
-
-  border: 2px solid green;
+  gap: 2px;
+  margin-bottom: 10px;
 }
 
-.productInfoContainer .img1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 6;
-
-
+.productInfoBuySectionButtons > button {
+  background-color: #2aa730;
+  border-color: rgb(32, 122, 52);
+  border-radius: 4px;
+  height: 70px;
+  color: rgb(230, 230, 230);
+  font-size: 32px;
+  padding: 10px 20px;
+  transition: background-color .2s;
 }
 
-.productInfoContainer .img2, .img3, .img4, .img5, .img6, .img7 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row: initial / span 2;
-} */
+.productInfoBuySectionButtons > button:hover {
+  background-color: #21b329;
+  border-color: rgb(35, 158, 62);
+  cursor: pointer;
+}
+
+.productInfoBuySectionButtons > button:first-child {
+  width: 250px;
+  font-size: 36px;
+}
+
+.productInfoDetailsSection {
+  padding: 0px 30px;
+  margin-bottom: 10px
+}
+
+.productInfoDetailsTitle {
+  border: 1px solid rgb(65, 65, 65);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 5px 6px;
+}
+
+.productInfos {
+  border: 1px solid rgb(65, 65, 65);
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: 10px 10px;
+}
+
+.productInfos p {
+  padding: 12px 2px;
+}
+
+.productInfoSeeMoreProductsSection {
+  padding: 0px 30px;
+}
