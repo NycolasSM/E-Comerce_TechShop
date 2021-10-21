@@ -11,8 +11,6 @@ import FilterBrands from './components/FilterBrands.jsx'
 import ProductCard from './components/ProductCard.jsx'
 import CardFiltersSelected from './components/CardFiltersSelected.jsx';
 
-// import ProductPage from '../ProductInfo/ProductPage.jsx';
-
 const Home = () => {
 
   const [category, setCategory] = useState("")
@@ -34,12 +32,16 @@ const Home = () => {
     setBrand("")
   }
 
+  const carouselAdvertisingFilter = (brand) => {
+    setBrand(brand)
+  }
+
   return (
     <div>
       <TopBarInfo />
       <Header />
       <Nav />
-      <Carousel />
+      <Carousel carouselAdvertisingFilter={carouselAdvertisingFilter} />
       <HomeCategoriesSession title="Procure pela Categoria" more="Filtre pela Categorias" />
       <FilterCategories filterCategory={filterCategory} />
       <br />

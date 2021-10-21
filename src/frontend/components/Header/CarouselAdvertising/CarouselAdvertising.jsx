@@ -8,7 +8,9 @@ import "./CarouselAdvertising.css";
 import AdsMousesTecladosLogitech from './imgs/AdsMousesTecladosLogitech.png'
 import AdsMousesTecladosRedDragon from './imgs/AdsMousesTecladosRedDragon.png'
 
-const Carousel = () => {
+const Carousel = ({
+  carouselAdvertisingFilter,
+}) => {
 
   let settings = {
     dots: true,
@@ -21,10 +23,10 @@ const Carousel = () => {
   }
 
   let items = [
-    { id: 1, alt: 'AdvertisingBanner', img: AdsMousesTecladosLogitech },
-    { id: 2, alt: 'AdvertisingBanner', img: AdsMousesTecladosRedDragon },
-    { id: 3, alt: 'AdvertisingBanner', img: AdsMousesTecladosLogitech },
-    { id: 4, alt: 'AdvertisingBanner', img: AdsMousesTecladosRedDragon },
+    { id: 1, alt: 'AdvertisingBanner', brand: 'Logitech', img: AdsMousesTecladosLogitech },
+    { id: 2, alt: 'AdvertisingBanner', brand: 'RedDragon', img: AdsMousesTecladosRedDragon },
+    { id: 3, alt: 'AdvertisingBanner', brand: 'Logitech', img: AdsMousesTecladosLogitech },
+    { id: 4, alt: 'AdvertisingBanner', brand: 'RedDragon', img: AdsMousesTecladosRedDragon },
   ]
 
   return (
@@ -40,7 +42,7 @@ const Carousel = () => {
               duration={500}
               key={item.id}
             >
-              <div key={item.id}><img className="carrouselAdvertisingImg" alt={item.alt} src={item.img} /></div>
+              <div onClick={() => carouselAdvertisingFilter(item.brand)} key={item.id}><img className="carrouselAdvertisingImg" alt={item.alt} src={item.img} /></div>
             </Link>)}
         </Slider>
       </div>

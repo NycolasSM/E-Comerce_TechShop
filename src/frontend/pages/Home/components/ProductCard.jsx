@@ -13,8 +13,6 @@ const ProductCard = ({
 
   const [products, setProduct] = useState([])
 
-    // ?_limit=6 ---- para aplicar um limite de itens na requisição
-
     useEffect(() => {
       fetch("http://localhost:3001/products/")
         .then(resp => resp.json())

@@ -21,13 +21,6 @@
   margin-bottom: 30px;
 }
 
-.signUpForm label {
-  padding-left: 60px;
-  align-self: flex-start;
-  font-size: 1.3rem;
-  margin: 8px 0px;
-}
-
 .signUpForm input {
   align-self: center;
   border-radius: 6px;

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "products": "json-server --watch ./db/products.json --port 3001",
-    "users": "json-server --watch ./db/users.json --port 3002"
+    "db": "json-server --watch ./db/db.json --port 3001",
+    "users": "json-server --watch ./db/users.json --port 3003"
   },
   "author": "",
   "license": "ISC",
