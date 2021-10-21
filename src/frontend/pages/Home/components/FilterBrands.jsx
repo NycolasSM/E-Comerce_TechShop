@@ -9,7 +9,7 @@ import BrandIconLogitech from './icons/BrandIconLogitech.png'
 import BrandIconRazer from './icons/BrandIconRazer.png'
 import BrandIconPositivoGamer from './icons/BrandIconPositivoGamer.png'
 
-import Card from '../../../components/Cards/Card.jsx'
+import CardBrandCategory from '../../../components/Cards/CardBrandCategory.jsx'
 
 let icons = {
   "": CardIconDefault,
@@ -35,22 +35,22 @@ const FilterBrands = ({
       >
         <section className="flexCards">
           <div onClick={() => filterBrand("RedDragon")}>
-            <Card className="Brand" title="RedDragon" imageSrc={icons["RedDragon"]} altText="BrandIcon" />
+            <CardBrandCategory className="Brand" title="RedDragon" imageSrc={icons["RedDragon"]} altText="BrandIcon" />
           </div>
           <div onClick={() => filterBrand("HyperX")}>
-            <Card className="Brand" title="HyperX" imageSrc={icons["HyperX"]} altText="BrandIcon" />
+            <CardBrandCategory className="Brand" title="HyperX" imageSrc={icons["HyperX"]} altText="BrandIcon" />
           </div>
           <div onClick={() => filterBrand("Corsair")}>
-            <Card className="Brand" title="Corsair" imageSrc={icons["Corsair"]} altText="BrandIcon" />
+            <CardBrandCategory className="Brand" title="Corsair" imageSrc={icons["Corsair"]} altText="BrandIcon" />
           </div>
           <div onClick={() => filterBrand("Logitech")}>
-            <Card className="Brand" title="Logitech" imageSrc={icons["Logitech"]} altText="BrandIcon" />
+            <CardBrandCategory className="Brand" title="Logitech" imageSrc={icons["Logitech"]} altText="BrandIcon" />
           </div>
           <div onClick={() => filterBrand("Razer")}>
-            <Card className="Brand" title="Razer" imageSrc={icons["Razer"]} altText="BrandIcon" />
+            <CardBrandCategory className="Brand" title="Razer" imageSrc={icons["Razer"]} altText="BrandIcon" />
           </div>
           <div onClick={() => filterBrand("PositivoGamer")}>
-            <Card className="Brand" title="Positivo Gamer" imageSrc={icons["PositivoGamer"]} altText="BrandIcon" />
+            <CardBrandCategory className="Brand" title="Positivo Gamer" imageSrc={icons["PositivoGamer"]} altText="BrandIcon" />
           </div>
         </section>
       </Link>

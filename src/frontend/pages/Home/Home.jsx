@@ -11,6 +11,8 @@ import FilterBrands from './components/FilterBrands.jsx'
 import ProductCard from './components/ProductCard.jsx'
 import CardFiltersSelected from './components/CardFiltersSelected.jsx';
 
+// import ProductPage from '../ProductInfo/ProductPage.jsx';
+
 const Home = () => {
 
   const [category, setCategory] = useState("")
@@ -38,17 +40,16 @@ const Home = () => {
       <Header />
       <Nav />
       <Carousel />
-      <HomeCategoriesSession title="Procure pela Categoria" more="Todas as Categorias" />
+      <HomeCategoriesSession title="Procure pela Categoria" more="Filtre pela Categorias" />
       <FilterCategories filterCategory={filterCategory} />
       <br />
       <br />
-      <HomeCategoriesSession title="Sua Marca Favorita" more="Todas as marcas" />
+      <HomeCategoriesSession title="Sua Marca Favorita" more="Filtre pela marcas" />
       <FilterBrands filterBrand={filterBrand} />
       <br />
       <br />
       <div id="scroll"></div>
       <HomeCategoriesSession title="Conheça os Produtos" more="" />
-      {/* fazer um card para mostrar os filtros utilizados */}
       <CardFiltersSelected category={category} brand={brand} removeCategoryFilter={removeCategoryFilter} removeBrandFilter={removeBrandFilter} />
       <ProductCard category={category} brand={brand} />
       <br />

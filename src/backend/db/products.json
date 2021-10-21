@@ -19,7 +19,7 @@
         },
         {
           "id": 4,
-          "src": "./ProductsImgs/MouseGamerCobr4.png"
+          "src": "./ProductsImgs/MouseGamerCobra4.png"
         }
       ],
       "value": 135,
@@ -41,7 +41,7 @@
         },
         {
           "id": 3,
-          "src": "../ProductsImgs/MouseGamerRedDragonGriffin3.png"
+          "src": "./ProductsImgs/MouseGamerRedDragonGriffin3.png"
         }
       ],
       "value": 110,

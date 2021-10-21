@@ -9,7 +9,7 @@ import CardIconMouse from './icons/CardIconMouse.png'
 import CardIconMousePad from './icons/CardIconMousePad.png'
 import CardIconHeadPhone from './icons/CardIconHeadPhone.png'
 
-import Card from '../../../components/Cards/Card.jsx'
+import CardBrandCategory from '../../../components/Cards/CardBrandCategory.jsx'
 
 const icons = {
   "": CardIconDefault,
@@ -34,22 +34,22 @@ const FilterCategories = ({
       >
         <section className="flexCards">
           <div onClick={() => filterCategory("Monitor")} >
-            <Card className="" category="Monitor" title="Monitores" imageSrc={icons["Monitor"]} altText="CategoryIcon" />
+            <CardBrandCategory className="" category="Monitor" title="Monitores" imageSrc={icons["Monitor"]} altText="CategoryIcon" />
           </div>
           <div onClick={() => filterCategory("Keyboard")} >
-            <Card className="" category="Keyboard" title="Teclados" imageSrc={icons["Keyboard"]} altText="CategoryIcon" />
+            <CardBrandCategory className="" category="Keyboard" title="Teclados" imageSrc={icons["Keyboard"]} altText="CategoryIcon" />
           </div>
           <div onClick={() => filterCategory("Mouse")} >
-            <Card className="" category="Mouse" title="Mouses" imageSrc={icons["Mouse"]} altText="CategoryIcon" />
+            <CardBrandCategory className="" category="Mouse" title="Mouses" imageSrc={icons["Mouse"]} altText="CategoryIcon" />
           </div>
           <div onClick={() => filterCategory("Mousepad")} >
-            <Card className="" category="Mousepads" title="MousePads" imageSrc={icons["MousePad"]} altText="CategoryIcon" />
+            <CardBrandCategory className="" category="Mousepads" title="MousePads" imageSrc={icons["MousePad"]} altText="CategoryIcon" />
           </div>
           <div onClick={() => filterCategory("Headset")} >
-            <Card className="" category="Headset" title="Fones de Ouvido" imageSrc={icons["HeadPhone"]} altText="CategoryIcon" />
+            <CardBrandCategory className="" category="Headset" title="Fones de Ouvido" imageSrc={icons["HeadPhone"]} altText="CategoryIcon" />
           </div>
           <div onClick={() => filterCategory("KitPc")} >
-            <Card className="" category="KitPC" title="Computadores" imageSrc={icons["Computer"]} altText="CategoryIcon" />
+            <CardBrandCategory className="" category="KitPC" title="Computadores" imageSrc={icons["Computer"]} altText="CategoryIcon" />
           </div>
         </section >
       </Link>

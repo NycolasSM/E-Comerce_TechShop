@@ -12,7 +12,7 @@
 }
 
 .homeCategory span:hover{
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .homeCategory span::after{

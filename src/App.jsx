@@ -5,7 +5,7 @@ import Home from './frontend/pages/Home/Home.jsx';
 import Login from './frontend/pages/Login/Login.jsx';
 import FormularioTeste from './frontend/pages/FormTest/FormularioTeste.jsx';
 import ProductsFiltered from './frontend/pages/ProductsList/ProductsFiltered.jsx';
-import ProductInfo from './frontend/pages/ProductInfo/ProductInfo.jsx'
+import ProductPage from './frontend/pages/ProductInfo/ProductPage.jsx'
 
 const App = () => {
   return (
@@ -13,8 +13,8 @@ const App = () => {
       <Switch>   {/* o switch é usado para asegurar que apenas uma das paginas serao exibidas, pode ser substituido por exatic na frente do route porem umas das diferenças é que nesse contexto qualquer url que nao aprontar exatamente para um endereço ele ira para o home */}
         <Route path="/sigin" component={Login} />
         <Route path="/formtest" component={FormularioTeste} />
-        <Route path="/Products" component={ProductsFiltered} />
-        <Route path="/tests" component={ProductInfo} />
+        <Route path="/productsList" component={ProductsFiltered} />
+        <Route path="/product/:id" component={ProductPage} />
         <Route path="/" component={Home} />
       </Switch>
     </BrowserRouter>

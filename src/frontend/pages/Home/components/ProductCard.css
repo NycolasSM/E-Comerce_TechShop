@@ -3,7 +3,7 @@
   width: 230px;
   height: 368px;
   align-items: center;
-  background-color: #e7e7e7;
+  background-color: #e3e3e3;
   border-radius: 6px;
   box-shadow: 4px 5px 15px 3px rgba(0, 0, 0, 0.267);
   transition: background-color 0.3s;
@@ -22,7 +22,7 @@
 }
 
 .card.Product:hover {
-  background-color: #eeeeee;
+  background-color: #e3e3e3;
   border-radius: 6px;
   box-shadow: 6px 7px 15px 3px rgba(0, 0, 0, 0.267);
 }

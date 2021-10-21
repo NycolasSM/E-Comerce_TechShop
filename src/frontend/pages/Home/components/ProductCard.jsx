@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react'
+
+import { Link } from 'react-router-dom'
+
 import './ProductCard.css'
 
-import Card from '../../../components/Cards/Card.jsx'
+import CardProducts from '../../../components/Cards/CardProducts.jsx'
 
 const ProductCard = ({
   category = '',
@@ -42,8 +45,6 @@ const ProductCard = ({
       }
     }
 
-
-
     let productsFiltered = products.filter(aplyFilterCategory).filter(aplyFilterBrands)
 
     return (
@@ -51,7 +52,7 @@ const ProductCard = ({
         <section className="flexCardsProduct" id="idTeste">
           {products.length > 0 ? ("") : ("Carregando ")}
           {productsFiltered.map(product => (
-            <Card className="Product" key={product.id} title={product.name} subTitle={product.description} imageSrc={product.imgs[0].src} value={product.value} altText="ProductIcon" />
+            <Link key={product.id} className="link" to={`/product/${product.id}`}><CardProducts className="Product" key={product.id} title={product.name} subTitle={product.description} imageSrc={product.imgs[0].src} value={product.value} altText="ProductIcon" /></Link>
           ))}
         </section>
       </div>

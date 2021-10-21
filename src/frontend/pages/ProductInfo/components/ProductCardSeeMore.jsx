@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
 import './ProductCardSeeMore.css'
 
-import Card from '../../../components/Cards/Card.jsx'
+import CardProducts from '../../../components/Cards/CardProducts.jsx'
 
 const ProductCardSeeMore = ({
   category = '',
@@ -9,6 +11,7 @@ const ProductCardSeeMore = ({
 }) => {
 
   const [products, setProduct] = useState([])
+  
 
   // ?_limit=6 ---- para aplicar um limite de itens na requisição
 
@@ -42,15 +45,13 @@ const ProductCardSeeMore = ({
     }
   }
 
-
-
   let productsFiltered = products.filter(aplyFilterCategory).filter(aplyFilterBrands)
 
   return (
     <section className="flexCardsProductSeeMore" id="idTeste">
       {products.length > 0 ? ("") : ("Carregando ")}
       {productsFiltered.slice(0, 5).map(product => (
-        <Card className="Product" id="SeeMore" key={product.id} title={product.name} subTitle={product.description} imageSrc={product.imgs[0].src} value={product.value} altText="ProductIcon" />
+        <Link key={product.id} className="link" to={`/product/${product.id}`}><CardProducts className="Product" id="SeeMore" key={product.id} title={product.name} subTitle={product.description} imageSrc={`.${product.imgs[0].src}`} value={product.value} altText="ProductIcon" /></Link>
       ))}
     </section>
   )

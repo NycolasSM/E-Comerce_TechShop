@@ -3,6 +3,7 @@
   gap: 10px;
   margin-left: 28px;
   margin-top: 14px;
+  margin-bottom: 10px;
 }
 
 .filterSelected {
@@ -15,6 +16,7 @@
 
 .filterSelected:hover {
   background-color: rgb(189, 189, 189);
+  cursor: pointer;
 }
 
 .filterSelected::before {

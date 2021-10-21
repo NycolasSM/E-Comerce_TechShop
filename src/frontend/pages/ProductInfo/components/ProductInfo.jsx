@@ -1,28 +1,26 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import './ProductInfo.css'
 
 import { faShoppingCart, faTruck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import TopBarInfo from '../../components/Header/TopBarInfo.jsx';
-import Header from '../../components/Header/Header.jsx';
-import Nav from '../../components/Header/Nav.jsx';
-import Footer from '../../components/Footer/Footer.jsx';
-import ProductCardSeeMore from './components/ProductCardSeeMore';
+import TopBarInfo from '../../../components/Header/TopBarInfo.jsx';
+import Header from '../../../components/Header/Header.jsx';
+import Nav from '../../../components/Header/Nav.jsx';
+import Footer from '../../../components/Footer/Footer.jsx';
+import ProductCardSeeMore from './ProductCardSeeMore';
 
 // import imgDefault from './img/imgDefault.png'
-
-import imgTest from './img/MouseGamerCobra.png'
-import imgTest2 from './img/MouseGamerCobra2.png'
-import imgTest3 from './img/MouseGamerCobra3.png'
-import imgTest4 from './img/MouseGamerCobra4.png'
 
 const ProductInfo = ({
   title,
   value,
   category,
-  brand
+  brand,
+  productImgs = [],
+  prevewProductImg
 }) => {
 
   function setPreview(event) {
@@ -37,6 +35,17 @@ const ProductInfo = ({
     preview.src = event.target.src
   }
 
+  const productValue12x = (Math.floor(value / 12).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }))
+
+  function converterValorParaReal(numero) {
+    if (typeof numero == 'number') {
+      let numeroConvertido = numero.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+      return numeroConvertido
+    } else {
+      return numero
+    }
+  }
+
   return (
     <div>
       <TopBarInfo />
@@ -45,31 +54,33 @@ const ProductInfo = ({
       <div className="limitPageWidth">
         <div className="productInfoContainer">
           <div className="productInfoPath">
-            <span className="productPath">Home</span>
+            <Link className="productPath" to="/">
+              <span >Home</span>
+            </Link>
             {/* neste campo pretendo fazer um link mesmo que quando o usuario clicar ira incaminhar para a pagina productList */}
-            <span className="productPath">Mouses</span>
-            <span className="productPath">RedDragon</span>
+            <span className="productPath">{category}</span>
+            <span className="productPath">{brand}</span>
           </div>
           <section className="productInfoSection">
             <div className="productInfoPreviewSection">
-              <img className="productInfoPreview" id="imgPreview" src={imgTest} alt="PreviewProductImg" />
-              <img className="productInfoThumbnail" onMouseEnter={setPreview} id="imgNav" src={imgTest} alt="ThumbnailProductImg" />
-              <img className="productInfoThumbnail" onMouseEnter={setPreview} id="imgNav" src={imgTest2} alt="ThumbnailProductImg" />
-              <img className="productInfoThumbnail" onMouseEnter={setPreview} id="imgNav" src={imgTest3} alt="ThumbnailProductImg" />
-              <img className="productInfoThumbnail" onMouseEnter={setPreview} id="imgNav" src={imgTest4} alt="ThumbnailProductImg" />
+              <img className="productInfoPreview" id="imgPreview" src={`.${prevewProductImg}`} alt="PreviewProductImg" />
+              {productImgs.map(product => (
+                <img key={product.id} className="productInfoThumbnail" onMouseEnter={setPreview} id="imgNav" src={`.${product.src}`} alt="ThumbnailProductImg" />
+              ))}
             </div>
             <div className="productInfoBuySection">
-              <h3 className="productInfoBuySectionTitle">Mouse Gamer Cobra M711 RGB</h3>
-              <p className="productInfoBuySectionValue">R$ 124,90</p>
-              <p className="productInfoBuySectionValueWithDiscount"><span>ou </span>12x <span> de</span> R$ 10,75 <span> sem Juros</span></p>
-              <p className="productInfoBuySectionFreightCalculation">
+              <h3 className="productInfoBuySectionTitle">{title}</h3>
+              <hr />
+              <p className="productInfoBuySectionValue">{converterValorParaReal(value)}</p>
+              <div className="productInfoBuySectionValueWithDiscount"><span> ou </span>12x <span> de</span> {productValue12x}<span> sem Juros</span></div>
+              <div className="productInfoBuySectionFreightCalculation">
                 <FontAwesomeIcon icon={faTruck} />
                 <span>
                   Calcular Frete:
                 </span>
                 <input type="text" name="Frete" id="Frete" />
                 <p className="productInfoBuySectionFreightCalculationValue" >R$19,90 - PAC ( 7 dias)</p>
-              </p>
+              </div>
               <p className="productInfoBuySectionInventory">Estoque disponível</p>
               <p className="productInfoBuySectionAmount">Quantidade:
                 <select id="cars">
@@ -89,8 +100,8 @@ const ProductInfo = ({
           <section className="productInfoDetailsSection" >
             <h2 className="productInfoDetailsTitle" >Características</h2>
             <div className="productInfos">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic deleniti id consectetur laboriosam. Unde harum eum omnis impedit tempore ex quidem qui minus, culpa vel quae, corrupti quisquam fuga dolore?</p>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error assumenda voluptatem sequi beatae deleniti laborum quis, est ullam cupiditate provident distinctio neque! Mollitia, perferendis. Facilis, culpa. Provident voluptate qui similique!</p>
+              <p>lo impedit aspernatur inventore sequi, totam ipsum saepe necessitatibus voluptatum, dolorem possimus minima expedita eveniet ratione. Voluptatibus ipsa quidem aspernatur voluptas pariatur. Hic deleniti id consectetur laboriosam. Unde harum eum omnis impedit tempore ex quidem qui minus, culpa vel quae, corrupti quisquam fuga dolore?</p>
             </div>
           </section>
           <section className="productInfoDetailsSection">
@@ -116,7 +127,7 @@ const ProductInfo = ({
           <section className="productInfoSeeMoreProductsSection">
             <h2 className="productInfoDetailsTitle">Conheça também</h2>
             <div className="productsSeeMore">
-              <ProductCardSeeMore category="Mouse" />
+              <ProductCardSeeMore category={category} />
             </div>
           </section>
         </div>
