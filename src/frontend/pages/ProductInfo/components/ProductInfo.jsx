@@ -22,7 +22,7 @@ const ProductInfo = ({
   brand,
   id,
   productImgs = [],
-  prevewProductImg
+  previewProductImg
 }) => {
 
   const [userId, setUserId] = useState("0")
@@ -59,21 +59,27 @@ const ProductInfo = ({
     }
   }
 
-  let form = {
-    cart: [
-      {
-        productId: "1",
-        value: 125.35
-      }
-    ]
+  function addItemToCart(id) {
+    let formCart = {}
+    axios.get(`http://localhost:3001/users/${userId}`)
+      .then(resp => {
+        formCart = resp.data
+        formCart.cart.push({ productId: id, value: value, title: title, previewProductImg: previewProductImg })
+        axios.put(`http://localhost:3001/users/${userId}`, formCart)
+          .catch(error => console.log(error))
+          .then(() => window.location.reload())
+      })
   }
 
-  function addItemToCart(id) {
-    console.log(id)
-    axios.post(`http://localhost:3001/users/${userId}`, form)
-      .then(response => this.setState({ cart: response.data.id }))
-      .catch(err => {
-        console.log(err)
+  function addFavoriteItem(id) {
+    let formFavorites = {}
+    axios.get(`http://localhost:3001/users/${userId}`)
+      .then(resp => {
+        formFavorites = resp.data
+        formFavorites.favoriteItens.push({ productId: id })
+        axios.put(`http://localhost:3001/users/${userId}`, formFavorites)
+          .catch(error => console.log(error))
+          .then(() => window.location.reload())
       })
   }
 
@@ -88,13 +94,13 @@ const ProductInfo = ({
             <Link className="productPath" to="/">
               <span >Home</span>
             </Link>
-            {/* neste campo pretendo fazer um link mesmo que quando o usuario clicar ira incaminhar para a pagina productList */}
+            {/* neste campo pretendo fazer um link mesmo que ao usuario clicar ira incaminhar para a pagina productList */}
             <span className="productPath">{category}</span>
             <span className="productPath">{brand}</span>
           </div>
           <section className="productInfoSection">
             <div className="productInfoPreviewSection">
-              <img className="productInfoPreview" id="imgPreview" src={`.${prevewProductImg}`} alt="PreviewProductImg" />
+              <img className="productInfoPreview" id="imgPreview" src={`.${previewProductImg}`} alt="PreviewProductImg" />
               {productImgs.map(product => (
                 <img key={product.id} className="productInfoThumbnail" onMouseEnter={setPreview} id="imgNav" src={`.${product.src}`} alt="ThumbnailProductImg" />
               ))}
@@ -125,7 +131,7 @@ const ProductInfo = ({
               <div className="productInfoBuySectionButtons">
                 <button >Comprar</button>
                 <button onClick={() => addItemToCart(id)}><FontAwesomeIcon icon={faShoppingCart} />+</button>
-                <button><FontAwesomeIcon icon={faHeart} />+</button>
+                <button onClick={() => addFavoriteItem(id)}><FontAwesomeIcon icon={faHeart} />+</button>
               </div>
             </div>
           </section>

@@ -7,7 +7,7 @@ const ProductPage = () => {
 
   const [products, setProduct] = useState([])
 
-  const [prevewProductImg, setPrevewProductImg] = useState()
+  const [previewProductImg, setPrevewProductImg] = useState()
 
   const { id } = useParams();
 
@@ -23,7 +23,7 @@ const ProductPage = () => {
 
   return (
     <div>
-      <ProductInfo key={products.id} id={id} title={products.name} value={products.value} category={products.category} brand={products.brand} productImgs={products.imgs} prevewProductImg={prevewProductImg} altText="ProductIcon" />
+      <ProductInfo key={products.id} id={id} title={products.name} value={products.value} category={products.category} brand={products.brand} productImgs={products.imgs} previewProductImg={previewProductImg} altText="ProductIcon" />
     </div>
   )
 }

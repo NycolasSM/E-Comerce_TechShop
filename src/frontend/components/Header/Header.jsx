@@ -36,7 +36,7 @@ export default function TopBar() {
         setFavoritesAmount(data.favoriteItens.length)
         setCartTotal(data.cart.map(a => a.value).reduce( (accum, curr) => accum + curr, 0 ))
       })
-  }, [userId])
+  }, [userId, cartTotal, favoritesAmount])
 
   return (
     <div >

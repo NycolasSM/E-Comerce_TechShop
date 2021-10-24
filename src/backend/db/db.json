@@ -659,8 +659,28 @@
       "cpf": "123.456.789.00",
       "cart": [
         {
+          "productId": "8",
+          "value": 1899.9,
+          "title": "MonitorGamerBlur",
+          "previewProductImg": "./ProductsImgs/MonitorGamerBlueCase23.8FullHd165HzBM248GC.png"
+        },
+        {
+          "productId": "21",
+          "value": 282,
+          "title": "HyperX Cloud Alpha",
+          "previewProductImg": "./ProductsImgs/HeadSetGamerHyperxCloudAlpha.png"
+        },
+        {
           "productId": "1",
-          "value": 125.35
+          "value": 135,
+          "title": "RedDragon Cobra",
+          "previewProductImg": "./ProductsImgs/MouseGamerCobra.png"
+        },
+        {
+          "productId": "2",
+          "value": 110,
+          "title": "RedDragon Griffin",
+          "previewProductImg": "./ProductsImgs/MouseGamerRedDragonGriffin.png"
         }
       ],
       "favoriteItens": [
@@ -669,6 +689,9 @@
         },
         {
           "productId": "7"
+        },
+        {
+          "productId": "2"
         }
       ]
     },
@@ -713,14 +736,35 @@
       "password": "teste",
       "confirmPassword": "teste",
       "cpfOrCnpj": "123456789",
-      "cart": [],
+      "cart": [
+        {
+          "productId": "3"
+        }
+      ],
       "favoriteItens": [],
       "id": 3
+    },
+    {
+      "email": "milton@milton.gmail",
+      "name": "Milton",
+      "password": "123",
+      "confirmPassword": "123",
+      "cpfOrCnpj": "",
+      "cart": [
+        {
+          "productId": "8",
+          "value": 1899.9,
+          "title": "MonitorGamerBlur",
+          "previewProductImg": "./ProductsImgs/MonitorGamerBlueCase23.8FullHd165HzBM248GC.png"
+        }
+      ],
+      "favoriteItens": [],
+      "id": 4
     }
   ],
   "pageData": [
     {
-      "userId": 1,
+      "userId": 4,
       "id": 1
     }
   ]

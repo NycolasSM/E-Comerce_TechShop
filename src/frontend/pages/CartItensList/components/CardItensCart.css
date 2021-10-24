@@ -1,0 +1,55 @@
+.CartItensContainer {
+  margin: 30px;
+}
+
+.cardItensCartContainer{
+  display: flex;
+  align-items: center;
+  border: solid 1px #979797;
+  background-color: rgba(128, 128, 128, 0.151);
+}
+
+.cardItensCartList {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.cardItensCart {
+  display: flex;
+  gap: 90px;
+  width: 800px;
+  justify-content: space-between;
+  padding: 4px;
+  align-items: center;
+
+}
+
+.cardItensCartInfo {
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.cardItensCartImg {
+  padding: 2px;
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.cardItensCartButtons {
+  display: flex;
+  gap: 20px;
+  margin-right: 10px;
+  font-size: 36px;
+}
+
+.cardItensCartButtons:hover {
+  cursor: pointer;
+}

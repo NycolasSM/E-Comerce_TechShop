@@ -6,6 +6,7 @@ import Login from './frontend/pages/Login/Login.jsx';
 import FormularioTeste from './frontend/pages/FormTest/FormularioTeste.jsx';
 import ProductsFiltered from './frontend/pages/ProductsList/ProductsFiltered.jsx';
 import ProductPage from './frontend/pages/ProductInfo/ProductPage.jsx'
+import CartItensList from './frontend/pages/CartItensList/CartItensList.jsx';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/formtest" component={FormularioTeste} />
         <Route path="/productsList" component={ProductsFiltered} />
         <Route path="/product/:id" component={ProductPage} />
+        <Route path='/cart' component={CartItensList} />
         <Route path="/" component={Home} />
       </Switch>
     </BrowserRouter>
