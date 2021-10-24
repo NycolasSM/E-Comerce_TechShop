@@ -16,19 +16,27 @@ export default function TopBar() {
   const [cartTotal, setCartTotal] = useState(0)
   const [favoritesAmount, setFavoritesAmount] = useState()
 
+  const [userId, setUserId] = useState("0")
+
   // ?_limit=6 ---- para aplicar um limite de itens na requisição
 
   useEffect(() => {
-    fetch("http://localhost:3001/pageData/")
+    fetch(`http://localhost:3001/pageData/`)
       .then(resp => resp.json())
       .then(data => {
-        setUserName(data[0].name)
-        setCartTotal(data[0].cart.map(a => a.value).reduce( (accum, curr) => accum + curr, 0 ))
-        setFavoritesAmount(data[0].favoriteItens.length)
+        setUserId(data[0].userId)
       })
-  }, [])
+  }, [userId])
 
-  // caso nao esteja logado retornar no banco de daos "name": "notLoggedIn",
+  useEffect(() => {
+    fetch(`http://localhost:3001/users/${userId}`)
+      .then(resp => resp.json())
+      .then(data => {
+        setUserName(data.name)
+        setFavoritesAmount(data.favoriteItens.length)
+        setCartTotal(data.cart.map(a => a.value).reduce( (accum, curr) => accum + curr, 0 ))
+      })
+  }, [userId])
 
   return (
     <div >

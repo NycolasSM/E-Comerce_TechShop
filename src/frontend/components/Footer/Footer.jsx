@@ -65,9 +65,9 @@ const Footer = () => {
           <span><FontAwesomeIcon icon={faTwitterSquare} /></span>
           <span><FontAwesomeIcon icon={faInstagramSquare} /></span>
           <span><FontAwesomeIcon icon={faYoutubeSquare} /></span>
-        </div>
       </div>
-    </footer>
+    </div>
+    </footer >
   )
 }
 

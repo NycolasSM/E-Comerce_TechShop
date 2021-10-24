@@ -61,3 +61,8 @@
 .signUpForm span:hover {
   cursor: pointer;
 }
+
+.inputFieldDisable {
+  margin: 0px;
+  position: relative;
+}

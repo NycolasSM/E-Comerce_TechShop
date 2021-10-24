@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 import './SiginUpForm.css'
@@ -14,17 +14,24 @@ const SiginUpForm = () => {
   //   "cpf": "123.456.789.00",
   //   "cart": [
   //     {
-  //  "product": "Mouse Red Dragon",
-  //  "value": 137.9
+  //      "productid": "3",
   //     },
   //   ],
   //   "favoriteItens": [
   //     {
-  //       "product": "Mouse Red Dragon"
+  //       "productid": "2"
   //     },
   //   ]
   // }
 
+  const [users, setUsers] = useState([])
+
+  useEffect(() => {
+    axios.get('http://localhost:3001/users/')
+      .then(resp => {
+        setUsers(resp.data)
+      })
+  }, [])
 
   const [form, setForm] = useState({
     email: "",
@@ -39,16 +46,65 @@ const SiginUpForm = () => {
   function formChange(event) {
     const { name, value } = event.target;
 
-    setForm({ ...form, [name]: value})
+    setForm({ ...form, [name]: value })
   }
 
   function onSubmitForm(event) {
     event.preventDefault();
 
-    axios.post("http://localhost:3001/users", form)
-      .catch(err => {
-        console.log(err)
+    let passwordConfirm = false
+    let userNameIsSet = false
+    let emailIsSet = false
+    let emailIsValid = true
+
+    function verifyEmail() {
+      users.forEach(function(user) {
+        if (user.email === form.email) {
+          alert('email ja cadastrado')
+          emailIsValid = false
+        }
       })
+    }
+
+    function verifyIfUserIsSet() {
+      if (form.name === "") {
+        alert("precisa inserir um nome")
+        userNameIsSet = false
+      } else {
+        userNameIsSet = true
+      }
+    }
+
+    function verifyIfEmailIsSet() {
+      if (form.email === "") {
+        alert("precisa inserir um email")
+        emailIsSet = false
+      } else {
+        emailIsSet = true
+      }
+    }
+
+    function verifyPasswordEquals() {
+      if (form.password === form.confirmPassword) {
+        passwordConfirm = true
+      } else {
+        alert("senhas não conferem")
+        passwordConfirm = false
+      }
+    }
+
+    verifyEmail()
+    verifyIfUserIsSet()
+    verifyIfEmailIsSet()
+    verifyPasswordEquals()
+
+    if (passwordConfirm === true && userNameIsSet === true && emailIsSet === true && emailIsValid === true) {
+      axios.post("http://localhost:3001/users", form)
+        .then(() => window.location.reload())
+        .catch(err => {
+          console.log(err)
+        })
+    }
   }
 
   return (
@@ -96,11 +152,12 @@ const SiginUpForm = () => {
           />
         </div>
         <input
-          placeholder="CPF"
+          placeholder="CPF (campo desativado)"
           type="text"
           id="cpfOrCnp"
           name="cpfOrCnpj"
           onChange={formChange}
+          disabled
         />
         <div className="options">
           <button type="submit" >
@@ -108,15 +165,6 @@ const SiginUpForm = () => {
           </button>
         </div>
       </form>
-      <br />
-      <div>
-        <h4>Visualização do Formulário</h4>
-        <p>Email: {form.email}</p>
-        <p>Nome: {form.name}</p>
-        <p>Senha: {form.password}</p>
-        <p>Confirmação de Senha: {form.confirmPassword}</p>
-        <p>CPF: {form.cpfOrCnpj}</p>
-      </div>
       <br />
     </div>
   )

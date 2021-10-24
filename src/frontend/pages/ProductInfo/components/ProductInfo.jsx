@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import { Link } from 'react-router-dom';
 
 import './ProductInfo.css'
 
-import { faShoppingCart, faTruck } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart, faTruck, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import TopBarInfo from '../../../components/Header/TopBarInfo.jsx';
@@ -19,9 +20,21 @@ const ProductInfo = ({
   value,
   category,
   brand,
+  id,
   productImgs = [],
   prevewProductImg
 }) => {
+
+  const [userId, setUserId] = useState("0")
+
+  useEffect(() => {
+    fetch(`http://localhost:3001/pageData/`)
+      .then(resp => resp.json())
+      .then(data => {
+        setUserId(data[0].userId)
+      })
+
+  }, [userId])
 
   function setPreview(event) {
     let activeImages = document.getElementsByClassName('active')
@@ -44,6 +57,24 @@ const ProductInfo = ({
     } else {
       return numero
     }
+  }
+
+  let form = {
+    cart: [
+      {
+        productId: "1",
+        value: 125.35
+      }
+    ]
+  }
+
+  function addItemToCart(id) {
+    console.log(id)
+    axios.post(`http://localhost:3001/users/${userId}`, form)
+      .then(response => this.setState({ cart: response.data.id }))
+      .catch(err => {
+        console.log(err)
+      })
   }
 
   return (
@@ -93,7 +124,8 @@ const ProductInfo = ({
               </p>
               <div className="productInfoBuySectionButtons">
                 <button >Comprar</button>
-                <button><FontAwesomeIcon icon={faShoppingCart} />+</button>
+                <button onClick={() => addItemToCart(id)}><FontAwesomeIcon icon={faShoppingCart} />+</button>
+                <button><FontAwesomeIcon icon={faHeart} />+</button>
               </div>
             </div>
           </section>

@@ -173,6 +173,7 @@
 
 .carousel-initialized {
   pointer-events: initial;
+  cursor: pointer;
 }
 
 .carousel-arrow {

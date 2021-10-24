@@ -17,6 +17,7 @@ const ProductCard = ({
       fetch("http://localhost:3001/products/")
         .then(resp => resp.json())
         .then(data => {
+          window.scrollTo(0, 0);
           setProduct(data)
         })
     }, [])

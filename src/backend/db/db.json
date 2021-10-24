@@ -643,31 +643,32 @@
   ],
   "users": [
     {
+      "id": 0,
+      "email": ".",
+      "password": ".",
+      "name": "notLoggedIn",
+      "cpf": "",
+      "cart": [],
+      "favoriteItens": []
+    },
+    {
       "id": 1,
       "email": "nycolas@test.com",
       "password": "1234",
       "name": "Nycolas",
-      "surname": "Santana",
       "cpf": "123.456.789.00",
       "cart": [
         {
-          "product": "Mouse Red Dragon",
-          "value": 137.9
-        },
-        {
-          "product": "teste",
-          "value": 220
+          "productId": "1",
+          "value": 125.35
         }
       ],
       "favoriteItens": [
         {
-          "product": "Mouse Red Dragon"
+          "productId": "6"
         },
         {
-          "product": "Mouse Logitec"
-        },
-        {
-          "product": "Mouse"
+          "productId": "7"
         }
       ]
     },
@@ -676,42 +677,41 @@
       "email": "test@test.com",
       "password": "test",
       "name": "test",
-      "surname": "Testando",
       "cpf": "123.456.789.00",
       "cart": [
         {
-          "product": "Mouse Red Dragon",
-          "value": 137.9
+          "productId": "1",
+          "value": 125.35
         },
         {
-          "product": "teste",
-          "value": 220
+          "productId": "3",
+          "value": 125.35
         },
         {
-          "product": "teste",
-          "value": 1370.9
+          "productId": "6",
+          "value": 125.35
         }
       ],
       "favoriteItens": [
         {
-          "product": "Mouse Red Dragon"
+          "productId": "6"
         },
         {
-          "product": "Monitor"
+          "productId": "7"
         },
         {
-          "product": "HeatSet"
+          "productId": "8"
         },
         {
-          "product": "Mousepad"
+          "productId": "6"
         }
       ]
     },
     {
-      "email": "nightneonbr@gmail.com",
-      "name": "Night",
-      "password": "123",
-      "confirmPassword": "123",
+      "email": "teste@gmail.com",
+      "name": "Usuario Teste",
+      "password": "teste",
+      "confirmPassword": "teste",
       "cpfOrCnpj": "123456789",
       "cart": [],
       "favoriteItens": [],
@@ -720,39 +720,8 @@
   ],
   "pageData": [
     {
-      "email": "nycolas@test.com",
-      "password": "1234",
-      "name": "notLoggedIn",
-      "surname": "Santana",
-      "cpf": "123.456.789.00",
-      "cart": [
-        {
-          "product": "Mouse Red Dragon",
-          "value": 137.9
-        },
-        {
-          "product": "teste",
-          "value": 220
-        },
-        {
-          "product": "teste",
-          "value": 1000
-        }
-      ],
-      "favoriteItens": [
-        {
-          "product": "Mouse Red Dragon"
-        },
-        {
-          "product": "Mouse Red Dragon"
-        },
-        {
-          "product": "Mouse Red Dragon"
-        },
-        {
-          "product": "Mouse Red Dragon"
-        }
-      ]
+      "userId": 1,
+      "id": 1
     }
   ]
 }
