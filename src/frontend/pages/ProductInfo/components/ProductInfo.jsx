@@ -76,7 +76,7 @@ const ProductInfo = ({
     axios.get(`http://localhost:3001/users/${userId}`)
       .then(resp => {
         formFavorites = resp.data
-        formFavorites.favoriteItens.push({ productId: id })
+        formFavorites.favoriteItens.push({ productId: id, value: value, title: title, previewProductImg: previewProductImg })
         axios.put(`http://localhost:3001/users/${userId}`, formFavorites)
           .catch(error => console.log(error))
           .then(() => window.location.reload())

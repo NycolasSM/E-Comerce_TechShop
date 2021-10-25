@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import './ItensCart.css'
+import './FavoriteItens.css'
 
-import CardItensCart from './CardItensCart'
+import CardFavoriteItens from './CardFavoriteItens'
 
-const ItensCart = () => {
+const FavoriteItens = () => {
 
-  const [productsCart, setProducts] = useState([])
+  const [favoriteList, setFavoriteList] = useState([])
 
   const [userId, setUserId] = useState(0)
 
@@ -19,7 +19,7 @@ const ItensCart = () => {
         fetch(`http://localhost:3001/users/${userId}`)
         .then(resp => resp.json())
         .then(data => {
-          setProducts(data.cart)
+          setFavoriteList(data.favoriteItens)
         })
       )
   }, [userId])
@@ -28,8 +28,8 @@ const ItensCart = () => {
     <div className="limitPageWidth">
       <div className="CartItensContainer">
         <ul className="cardItensCartList">
-          {productsCart.map(product => (
-            <li key={product.productId}><CardItensCart key={product.productId} title={product.title} img={product.previewProductImg} id={product.productId} value={product.value} /></li>
+          {favoriteList.map(product => (
+            <li key={product.productId}><CardFavoriteItens key={product.productId} title={product.title} img={product.previewProductImg} id={product.productId} value={product.value} /></li>
           ))}
         </ul>
       </div>
@@ -37,4 +37,4 @@ const ItensCart = () => {
   )
 }
 
-export default ItensCart
+export default FavoriteItens

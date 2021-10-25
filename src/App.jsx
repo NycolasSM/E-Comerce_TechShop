@@ -7,6 +7,7 @@ import FormularioTeste from './frontend/pages/FormTest/FormularioTeste.jsx';
 import ProductsFiltered from './frontend/pages/ProductsList/ProductsFiltered.jsx';
 import ProductPage from './frontend/pages/ProductInfo/ProductPage.jsx'
 import CartItensList from './frontend/pages/CartItensList/CartItensList.jsx';
+import FavoriteItensList from './frontend/pages/FavoriteItensList/FavoriteItensList.jsx'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/productsList" component={ProductsFiltered} />
         <Route path="/product/:id" component={ProductPage} />
         <Route path='/cart' component={CartItensList} />
+        <Route path='/favoriteItens' component={FavoriteItensList} />
         <Route path="/" component={Home} />
       </Switch>
     </BrowserRouter>

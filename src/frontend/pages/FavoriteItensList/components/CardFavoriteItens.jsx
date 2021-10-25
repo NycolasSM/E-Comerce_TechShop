@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-import './CardItensCart.css'
+import './CardFavoriteItens.css'
 
 import { faMinusCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -38,8 +38,8 @@ const CardItensCart = ({
             return true
           }
         }
-        let indexForDelete = formCart.cart.findIndex(productID)
-        formCart.cart.splice(indexForDelete, 1)
+        let indexForDelete = formCart.favoriteItens.findIndex(productID)
+        formCart.favoriteItens.splice(indexForDelete, 1)
         axios.put(`http://localhost:3001/users/${userId}`, formCart)
           .catch(error => console.log(error))
           .then(() => window.location.reload())

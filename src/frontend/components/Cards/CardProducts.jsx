@@ -35,7 +35,7 @@ const CardProducts = ({
             <p className="ProductCardTitle">{title}</p>
             <p className="ProductCardSubTItle">{subTitle}</p>
             <p className="ProductCardValue">{converterValorParaReal(value)}</p>
-            <p className="ProductCardValueInstallment">12x R$ {productValue12x}</p>
+            <p className="ProductCardValueInstallment">12x {productValue12x} sem juros</p>
           </div>
         </div>
       <div className="ProductCardButtons">
