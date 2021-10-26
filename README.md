@@ -30,8 +30,14 @@
 <br>
 <br>
 <br>
+<h2>Previsão para o Projeto</h2>
+<p>Pretendo ainda amadurecer bastante o projeto implementando testes, typescript, um banco de dados mas proximo de um cenario real, talvez uma responsividade para o mobile
+  entre outras coisas, o projeto ainda necessita de uma otimização do código mas pretendo continuar atualizando para melhora-lo.
+<br>
+<br>
+<br>
 <h2>Prototipação</h2>
-<p>Figma</p>
+<p>Prototipação do projeto foi feita com a ferramenta Figma</p>
 <br>
 <br>
 <br>
@@ -41,7 +47,7 @@
 <br>
 <br>
 <h2>JSON Server</h2>
-<p>Usado para criar a API</p>
+<p>Foi Usado para criar a API para guardar as informações dos usuarios cadastrados e dos produtos com seus respectivos dados</p>
 <br>
 <br>
 <br>
