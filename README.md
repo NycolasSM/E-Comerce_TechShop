@@ -30,6 +30,16 @@
 <br>
 <br>
 <br>
+<h2>Prototipação</h2>
+<p>Figma</p>
+<br>
+<br>
+<br>
+<h2>Responsividade</h2>
+<p>O Projeto foi feito com a intenção de ser usado apenas por Desktop porém tem total responsividade para monitores HD (1360x768) em diante</p>
+<br>
+<br>
+<br>
 <h2>JSON Server</h2>
 <p>Usado para criar a API</p>
 <br>
